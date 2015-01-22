@@ -1,0 +1,5253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2014-11-20T11:17:00-00:00" ModificationDateTime="2014-11-20T11:17:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRACAO001-20130901-184.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
+  <StopPoints>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB25305</StopPointRef>
+      <CommonName>Bus Station</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70629</StopPointRef>
+      <CommonName>The Gardens</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB22527</StopPointRef>
+      <CommonName>Westminster Drive</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70630</StopPointRef>
+      <CommonName>Acton Corner</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70633</StopPointRef>
+      <CommonName>Acton Park Hotel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB47958</StopPointRef>
+      <CommonName>Croes Eneurys</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70636</StopPointRef>
+      <CommonName>Bethel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70637</StopPointRef>
+      <CommonName>Newbrigg Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70638</StopPointRef>
+      <CommonName>Smithy Garage</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB47957</StopPointRef>
+      <CommonName>The Sycamores</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70640</StopPointRef>
+      <CommonName>Gresford Roundabout</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70642</StopPointRef>
+      <CommonName>Beeches Hotel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70658</StopPointRef>
+      <CommonName>Cross Trees House</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70643</StopPointRef>
+      <CommonName>Plough Inn</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70645</StopPointRef>
+      <CommonName>Narrow Lane</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB22523</StopPointRef>
+      <CommonName>Holly House</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70647</StopPointRef>
+      <CommonName>Red Lion Hotel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70648</StopPointRef>
+      <CommonName>Marford Hall</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70649</StopPointRef>
+      <CommonName>Old Carriage Yard</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70651</StopPointRef>
+      <CommonName>Christ Church</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70652</StopPointRef>
+      <CommonName>Butchers Arms</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70653</StopPointRef>
+      <CommonName>Park View</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140WDB22518</StopPointRef>
+      <CommonName>Darland Lane</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5140AWD70655</StopPointRef>
+      <CommonName>Veterinary Hospital</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1310</StopPointRef>
+      <CommonName>St Mary's Church</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1309</StopPointRef>
+      <CommonName>Oak Cottage</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1306</StopPointRef>
+      <CommonName>The Coach House</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1305</StopPointRef>
+      <CommonName>Bell Meadow Business Park</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1302</StopPointRef>
+      <CommonName>Straight Mile</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH694</StopPointRef>
+      <CommonName>Grosvenor Garden Centre</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1299</StopPointRef>
+      <CommonName>Rake Lane</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1297</StopPointRef>
+      <CommonName>Two Mile House</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH696</StopPointRef>
+      <CommonName>Holiday Inn</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2436</StopPointRef>
+      <CommonName>Lakewood</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH603</StopPointRef>
+      <CommonName>Lakeside</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2434</StopPointRef>
+      <CommonName>Bank of America</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2432</StopPointRef>
+      <CommonName>Marks &amp; Spencer</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2437</StopPointRef>
+      <CommonName>Herons Way</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2524</StopPointRef>
+      <CommonName>Kings School</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2440</StopPointRef>
+      <CommonName>Ash Grove</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2527</StopPointRef>
+      <CommonName>Grosvenor Nuffield Hospital</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2412</StopPointRef>
+      <CommonName>Grosvenor Street</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH1049</StopPointRef>
+      <CommonName>Pepper Street</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2396</StopPointRef>
+      <CommonName>Canal Bridge</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>0610CH2395</StopPointRef>
+      <CommonName>Railway Station</CommonName>
+    </AnnotatedStopPointRef>
+  </StopPoints>
+  <RouteSections>
+    <RouteSection id="ACAO001_060_20130725">
+      <RouteLink id="ACAO001_060_20130725_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+      <RouteLink id="ACAO001_060_20130725_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+        </To>
+        <Direction>outbound</Direction>
+      </RouteLink>
+    </RouteSection>
+  </RouteSections>
+  <Routes>
+    <Route id="ACAO001_060_20130725">
+      <Description>OB std jny 01 09 2013
+</Description>
+      <RouteSectionRef>ACAO001_060_20130725</RouteSectionRef>
+    </Route>
+  </Routes>
+  <JourneyPatternSections>
+    <JourneyPatternSection id="JPS_ACAO001-2">
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9539</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9540</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9541</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT27S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9542</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9543</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9544</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT18S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9545</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9546</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9547</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9548</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT94S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9549</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT110S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9550</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9551</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT54S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9552</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9553</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9554</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9555</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9556</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9557</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9558</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9559</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT44S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9560</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9561</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9562</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9563</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT28S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9564</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT37S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9565</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT20S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9566</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT37S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9567</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT25S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9568</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT35S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9569</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT38S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9570</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9571</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT34S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9572</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT12S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9573</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT15S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9574</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9575</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT33S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9576</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT52S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9577</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9578</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9579</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT191S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9580</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9581</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT122S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-2_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9582</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_ACAO001-3">
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9539</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9540</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9541</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT27S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9542</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9543</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9544</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT18S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9545</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9546</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9547</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9548</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT94S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9549</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT110S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9550</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9551</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT54S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9552</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9553</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9554</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9555</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9556</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9557</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9558</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9559</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT44S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9560</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9561</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9562</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9563</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT70S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9564</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT92S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9565</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT51S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9566</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT92S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9567</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9568</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT89S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9569</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT95S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9570</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT123S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9571</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9572</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9573</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT38S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9574</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9575</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9576</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT67S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9577</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9578</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT95S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9579</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT249S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9580</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9581</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT158S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-3_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9582</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT61S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_ACAO001-4">
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9539</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9540</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9541</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT27S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9542</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9543</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9544</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT18S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9545</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9546</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9547</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9548</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT94S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9549</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT110S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9550</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9551</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT54S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9552</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9553</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9554</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9555</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9556</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9557</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9558</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9559</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT44S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9560</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9561</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9562</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9563</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT56S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9564</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9565</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9566</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT73S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9567</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT50S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9568</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9569</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT76S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9570</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT98S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9571</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT67S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9572</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT24S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9573</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT31S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9574</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9575</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9576</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9577</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9578</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT89S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9579</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT229S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9580</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT38S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9581</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT147S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-4_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9582</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT56S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_ACAO001-5">
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9539</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9540</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9541</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT27S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9542</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9543</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9544</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT18S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9545</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9546</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9547</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9548</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT94S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9549</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT110S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9550</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9551</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT54S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9552</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9553</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9554</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9555</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9556</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9557</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9558</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9559</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT44S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9560</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9561</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9562</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9563</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT70S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9564</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT92S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9565</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT51S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9566</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT92S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9567</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9568</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT89S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9569</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT95S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9570</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT123S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9571</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9572</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9573</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT38S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9574</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9575</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9576</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9577</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9578</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT89S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9579</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT229S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9580</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT38S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9581</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT147S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-5_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9582</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT56S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_ACAO001-6">
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9539">
+        <From>
+          <StopPointRef>5140WDB25305</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9539</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT84S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9540">
+        <From>
+          <StopPointRef>5140AWD70629</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9540</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9541">
+        <From>
+          <StopPointRef>5140WDB22527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9541</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT27S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9542">
+        <From>
+          <StopPointRef>5140AWD70630</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9542</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9543">
+        <From>
+          <StopPointRef>5140AWD70633</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9543</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9544">
+        <From>
+          <StopPointRef>5140WDB47958</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9544</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT18S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9545">
+        <From>
+          <StopPointRef>5140AWD70636</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9545</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9546">
+        <From>
+          <StopPointRef>5140AWD70637</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9546</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9547">
+        <From>
+          <StopPointRef>5140AWD70638</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9547</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9548">
+        <From>
+          <StopPointRef>5140WDB47957</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9548</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT94S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9549">
+        <From>
+          <StopPointRef>5140AWD70640</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9549</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT110S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9550">
+        <From>
+          <StopPointRef>5140AWD70642</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9550</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9551">
+        <From>
+          <StopPointRef>5140AWD70658</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9551</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT54S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9552">
+        <From>
+          <StopPointRef>5140AWD70643</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9552</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9553">
+        <From>
+          <StopPointRef>5140AWD70645</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9553</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9554">
+        <From>
+          <StopPointRef>5140WDB22523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9554</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT41S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9555">
+        <From>
+          <StopPointRef>5140AWD70647</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9555</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9556">
+        <From>
+          <StopPointRef>5140AWD70648</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9556</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9557">
+        <From>
+          <StopPointRef>5140AWD70649</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9557</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9558">
+        <From>
+          <StopPointRef>5140AWD70651</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9558</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT30S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9559">
+        <From>
+          <StopPointRef>5140AWD70652</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9559</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT44S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9560">
+        <From>
+          <StopPointRef>5140AWD70653</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9560</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9561">
+        <From>
+          <StopPointRef>5140WDB22518</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9561</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9562">
+        <From>
+          <StopPointRef>5140AWD70655</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9562</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9563">
+        <From>
+          <StopPointRef>0610CH1310</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9563</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT37S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9564">
+        <From>
+          <StopPointRef>0610CH1309</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9564</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9565">
+        <From>
+          <StopPointRef>0610CH1306</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9565</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT28S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9566">
+        <From>
+          <StopPointRef>0610CH1305</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9566</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT48S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9567">
+        <From>
+          <StopPointRef>0610CH1302</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9567</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT34S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9568">
+        <From>
+          <StopPointRef>0610CH694</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9568</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9569">
+        <From>
+          <StopPointRef>0610CH1299</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9569</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT51S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9570">
+        <From>
+          <StopPointRef>0610CH1297</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9570</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9571">
+        <From>
+          <StopPointRef>0610CH696</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9571</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT45S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9572">
+        <From>
+          <StopPointRef>0610CH2436</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9572</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT16S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9573">
+        <From>
+          <StopPointRef>0610CH603</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9573</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT21S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9574">
+        <From>
+          <StopPointRef>0610CH2434</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9574</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT39S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9575">
+        <From>
+          <StopPointRef>0610CH2432</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9575</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT33S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9576">
+        <From>
+          <StopPointRef>0610CH2437</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9576</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT52S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9577">
+        <From>
+          <StopPointRef>0610CH2524</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9577</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9578">
+        <From>
+          <StopPointRef>0610CH2440</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9578</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9579">
+        <From>
+          <StopPointRef>0610CH2527</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9579</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT191S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9580">
+        <From>
+          <StopPointRef>0610CH2412</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9580</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT32S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9581">
+        <From>
+          <StopPointRef>0610CH1049</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9581</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT122S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_ACAO001-6_9582">
+        <From>
+          <StopPointRef>0610CH2396</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>0610CH2395</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>ACAO001_060_20130725_9582</RouteLinkRef>
+        <Direction>outbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+  </JourneyPatternSections>
+  <Operators>
+    <Operator id="ACYM">
+      <NationalOperatorCode>ACYM</NationalOperatorCode>
+      <OperatorCode>ACYM</OperatorCode>
+      <OperatorShortName>Arriva Cymru</OperatorShortName>
+    </Operator>
+    <Operator id="UNKWN">
+      <OperatorCode>UNKWN</OperatorCode>
+      <OperatorShortName>UNKWN</OperatorShortName>
+    </Operator>
+  </Operators>
+  <Services>
+    <Service>
+      <ServiceCode>ACAO001</ServiceCode>
+      <Lines>
+        <Line id="0">
+          <LineName>1</LineName>
+        </Line>
+      </Lines>
+      <OperatingPeriod>
+        <StartDate>2013-09-01</StartDate>
+      </OperatingPeriod>
+      <RegisteredOperatorRef>ACYM</RegisteredOperatorRef>
+      <StopRequirements>
+        <NoNewStopsRequired />
+      </StopRequirements>
+      <Mode>bus</Mode>
+      <Description>Wrexham - Chester</Description>
+      <StandardService>
+        <Origin>Wrexham</Origin>
+        <Destination>Chester</Destination>
+        <JourneyPattern id="JPS_ACAO001-2">
+          <DestinationDisplay>Chester, Railway Station, S4, City Road</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>JPS_ACAO001-2</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_ACAO001-3">
+          <DestinationDisplay>Chester, Railway Station, S4, City Road</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>JPS_ACAO001-3</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_ACAO001-4">
+          <DestinationDisplay>Chester, Railway Station, S4, City Road</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>JPS_ACAO001-4</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_ACAO001-5">
+          <DestinationDisplay>Chester, Railway Station, S4, City Road</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>JPS_ACAO001-5</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_ACAO001-6">
+          <DestinationDisplay>Chester, Railway Station, S4, City Road</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>JPS_ACAO001-6</JourneyPatternSectionRefs>
+        </JourneyPattern>
+      </StandardService>
+    </Service>
+  </Services>
+  <VehicleJourneys>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1045</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-2</JourneyPatternRef>
+      <DepartureTime>05:40:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1046</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-2</JourneyPatternRef>
+      <DepartureTime>06:00:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1047</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>06:16:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1048</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>06:28:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1049</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>06:40:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1050</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>06:52:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1051</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>07:04:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1052</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>07:16:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1053</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>07:29:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1054</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>07:43:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1055</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>07:55:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1056</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>08:07:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1057</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>08:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1058</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>08:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1059</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>08:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1060</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>08:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1061</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>09:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1062</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-3</JourneyPatternRef>
+      <DepartureTime>09:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1063</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>09:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1064</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>09:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1065</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>09:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1066</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>10:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1067</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>10:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1068</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>10:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1069</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>10:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1070</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>10:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1071</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>11:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1072</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>11:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1073</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>11:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1074</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>11:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1075</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>11:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1076</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>12:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1077</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>12:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1078</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>12:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1079</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>12:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1080</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>12:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1081</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>13:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1082</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>13:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1083</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>13:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1084</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>13:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1085</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>13:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1086</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>14:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1087</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>14:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1088</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>14:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1089</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>14:46:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1090</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-4</JourneyPatternRef>
+      <DepartureTime>14:58:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1091</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>15:10:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1092</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>15:22:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1093</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>15:34:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1094</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>15:47:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1095</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>16:00:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1096</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>16:12:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1097</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>16:25:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1098</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>16:37:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1099</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>16:49:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1100</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>17:01:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1101</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>17:13:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1102</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>17:26:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1103</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>17:39:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1104</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>17:52:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1105</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>18:05:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1106</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>18:17:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1107</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-5</JourneyPatternRef>
+      <DepartureTime>18:30:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1108</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>18:50:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1109</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>19:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1110</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>19:50:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1111</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>20:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1112</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>20:50:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1113</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>21:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1114</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>21:50:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1115</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>22:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>ACYM</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>1116</VehicleJourneyCode>
+      <ServiceRef>ACAO001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_ACAO001-6</JourneyPatternRef>
+      <DepartureTime>22:50:00</DepartureTime>
+    </VehicleJourney>
+  </VehicleJourneys>
+</TransXChange>

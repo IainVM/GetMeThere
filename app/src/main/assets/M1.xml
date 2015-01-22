@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2014-11-20T11:27:00-00:00" ModificationDateTime="2014-11-20T11:27:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRCBAM001-20140720-827.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
+  <ServicedOrganisations>
+    <ServicedOrganisation>
+      <OrganisationCode>102</OrganisationCode>
+      <Name>
+Cardiff Metropolitan University term days
+</Name>
+      <WorkingDays>
+        <DateRange>
+          <StartDate>2014-09-28</StartDate>
+          <EndDate>2014-12-20</EndDate>
+        </DateRange>
+        <DateRange>
+          <StartDate>2015-01-18</StartDate>
+          <EndDate>2015-03-28</EndDate>
+        </DateRange>
+        <DateRange>
+          <StartDate>2015-04-26</StartDate>
+          <EndDate>2015-06-20</EndDate>
+        </DateRange>
+      </WorkingDays>
+    </ServicedOrganisation>
+  </ServicedOrganisations>
+  <StopPoints>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710CAA02558</StopPointRef>
+      <CommonName>Campus</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10550</StopPointRef>
+      <CommonName>Promenade East</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10575</StopPointRef>
+      <CommonName>Lady Mary Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710WDB47616</StopPointRef>
+      <CommonName>Wedal Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10523</StopPointRef>
+      <CommonName>Llanishen Street</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10522</StopPointRef>
+      <CommonName>Heath Hotel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10612</StopPointRef>
+      <CommonName>Heath Hotel</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10843</StopPointRef>
+      <CommonName>Parkfield Place</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10844</StopPointRef>
+      <CommonName>North Road Clinic</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10846</StopPointRef>
+      <CommonName>Interchange</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11311</StopPointRef>
+      <CommonName>Ventnor Place</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11312</StopPointRef>
+      <CommonName>Mynachdy Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11314</StopPointRef>
+      <CommonName>Tesco</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11315</StopPointRef>
+      <CommonName>University</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11241</StopPointRef>
+      <CommonName>Black Lion</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11240</StopPointRef>
+      <CommonName>Heathcock</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11238</StopPointRef>
+      <CommonName>BBC Studios</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11313</StopPointRef>
+      <CommonName>Tesco</CommonName>
+    </AnnotatedStopPointRef>
+  </StopPoints>
+  <RouteSections>
+    <RouteSection id="CBAM001_003_20140520">
+      <RouteLink id="CBAM001_003_20140520_35162">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35163">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35164">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35165">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35166">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35167">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35168">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35169">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35170">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35171">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35172">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35173">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35174">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35175">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35176">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_003_20140520_35177">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+    </RouteSection>
+    <RouteSection id="CBAM001_004_20140520">
+      <RouteLink id="CBAM001_004_20140520_35179">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35180">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35181">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35182">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35183">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35184">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35185">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35186">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35187">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35188">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35189">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35190">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11313</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35191">
+        <From>
+          <StopPointRef>5710AWA11313</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35192">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35193">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35194">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="CBAM001_004_20140520_35195">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+    </RouteSection>
+  </RouteSections>
+  <Routes>
+    <Route id="CBAM001_003_20140520">
+      <Description>IB std 25 05 2014
+</Description>
+      <RouteSectionRef>CBAM001_003_20140520</RouteSectionRef>
+    </Route>
+    <Route id="CBAM001_004_20140520">
+      <Description>IB eve 25 05 2014
+</Description>
+      <RouteSectionRef>CBAM001_004_20140520</RouteSectionRef>
+    </Route>
+  </Routes>
+  <JourneyPatternSections>
+    <JourneyPatternSection id="JPS_CBAM001-3">
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35162">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35162</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT182S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35163">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35163</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35164">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35164</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT235S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35165">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35165</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT82S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35166">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35166</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT103S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35167">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35167</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35168">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35168</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT214S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35169">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35169</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35170">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35170</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT67S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35171">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35171</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT42S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35172">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35172</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT53S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35173">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35173</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT104S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35174">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35174</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT83S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35175">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35175</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35176">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35176</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-3_35177">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35177</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_CBAM001-4">
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35162">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35162</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT182S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35163">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35163</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35164">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35164</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT201S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35165">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35165</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT71S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35166">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35166</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT88S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35167">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35167</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT13S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35168">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35168</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT107S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35169">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35169</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35170">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35170</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT45S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35171">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35171</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT28S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35172">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35172</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35173">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35173</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT78S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35174">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35174</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35175">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35175</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35176">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35176</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT155S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-4_35177">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35177</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT145S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_CBAM001-5">
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35162">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35162</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT182S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35163">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35163</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35164">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35164</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT134S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35165">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35165</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35166">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35166</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35167">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35167</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT13S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35168">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35168</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT107S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35169">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35169</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35170">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35170</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT45S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35171">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35171</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT28S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35172">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35172</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35173">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35173</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT78S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35174">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35174</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35175">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35175</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35176">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35176</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-5_35177">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35177</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_CBAM001-6">
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35162">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35162</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT182S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35163">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35163</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35164">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35164</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT168S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35165">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35165</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35166">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35166</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT74S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35167">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35167</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT26S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35168">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35168</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT214S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35169">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35169</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT95S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35170">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35170</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT89S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35171">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35171</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT56S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35172">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35172</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT40S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35173">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35173</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT78S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35174">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35174</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35175">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35175</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT240S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35176">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35176</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT155S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-6_35177">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_003_20140520_35177</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT145S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_CBAM001-7">
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35179">
+        <From>
+          <StopPointRef>5710CAA02558</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35179</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT182S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35180">
+        <From>
+          <StopPointRef>5710AWA10550</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35180</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35181">
+        <From>
+          <StopPointRef>5710AWA10575</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35181</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT134S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35182">
+        <From>
+          <StopPointRef>5710WDB47616</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35182</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35183">
+        <From>
+          <StopPointRef>5710AWA10523</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35183</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT59S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35184">
+        <From>
+          <StopPointRef>5710AWA10522</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35184</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT13S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35185">
+        <From>
+          <StopPointRef>5710AWA10612</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35185</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT107S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35186">
+        <From>
+          <StopPointRef>5710AWA10843</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35186</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT47S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35187">
+        <From>
+          <StopPointRef>5710AWA10844</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35187</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT45S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35188">
+        <From>
+          <StopPointRef>5710AWA10846</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35188</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT28S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35189">
+        <From>
+          <StopPointRef>5710AWA11311</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35189</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT48S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35190">
+        <From>
+          <StopPointRef>5710AWA11312</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11313</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35190</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT132S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35191">
+        <From>
+          <StopPointRef>5710AWA11313</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35191</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT61S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35192">
+        <From>
+          <StopPointRef>5710AWA11314</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35192</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT119S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35193">
+        <From>
+          <StopPointRef>5710AWA11315</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35193</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35194">
+        <From>
+          <StopPointRef>5710AWA11241</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35194</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT155S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_CBAM001-7_35195">
+        <From>
+          <StopPointRef>5710AWA11240</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11238</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>CBAM001_004_20140520_35195</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT145S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+  </JourneyPatternSections>
+  <Operators>
+    <Operator id="CB000">
+      <NationalOperatorCode>CBUS</NationalOperatorCode>
+      <OperatorCode>CB000</OperatorCode>
+      <OperatorShortName>Cardiff Bus</OperatorShortName>
+    </Operator>
+  </Operators>
+  <Services>
+    <Service>
+      <ServiceCode>CBAM001</ServiceCode>
+      <Lines>
+        <Line id="0">
+          <LineName>M1</LineName>
+        </Line>
+      </Lines>
+      <OperatingPeriod>
+        <StartDate>2014-07-20</StartDate>
+      </OperatingPeriod>
+      <RegisteredOperatorRef>CB000</RegisteredOperatorRef>
+      <StopRequirements>
+        <NoNewStopsRequired />
+      </StopRequirements>
+      <Mode>bus</Mode>
+      <Description>Plas Gwyn - Metro Uni Llandaff - Metro Uni Cyncoed</Description>
+      <StandardService>
+        <Origin>Plas Gwyn</Origin>
+        <Destination>Metro Uni Cyncoed</Destination>
+        <JourneyPattern id="JPS_CBAM001-3">
+          <DestinationDisplay>Llandaff, University, SW-bound, Western Avenue</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_CBAM001-3</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_CBAM001-4">
+          <DestinationDisplay>Llandaff, BBC Studios, NW-bound, Llantrisant Road</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_CBAM001-4</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_CBAM001-5">
+          <DestinationDisplay>Llandaff, BBC Studios, NW-bound, Llantrisant Road</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_CBAM001-5</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_CBAM001-6">
+          <DestinationDisplay>Llandaff, BBC Studios, NW-bound, Llantrisant Road</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_CBAM001-6</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_CBAM001-7">
+          <DestinationDisplay>Llandaff, BBC Studios, NW-bound, Llantrisant Road</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_CBAM001-7</JourneyPatternSectionRefs>
+        </JourneyPattern>
+      </StandardService>
+    </Service>
+  </Services>
+  <VehicleJourneys>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9080</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-3</JourneyPatternRef>
+      <EndDeadRun>
+        <ShortWorking>
+          <JourneyPatternTimingLinkRef>JPS_CBAM001-3_35174</JourneyPatternTimingLinkRef>
+        </ShortWorking>
+      </EndDeadRun>
+      <DepartureTime>08:00:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9081</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-4</JourneyPatternRef>
+      <DepartureTime>09:00:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9082</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-5</JourneyPatternRef>
+      <DepartureTime>10:06:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9083</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-5</JourneyPatternRef>
+      <DepartureTime>11:06:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9084</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-5</JourneyPatternRef>
+      <DepartureTime>12:06:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9085</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-5</JourneyPatternRef>
+      <DepartureTime>13:06:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9086</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-5</JourneyPatternRef>
+      <DepartureTime>14:06:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9087</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-6</JourneyPatternRef>
+      <DepartureTime>15:05:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9088</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-6</JourneyPatternRef>
+      <DepartureTime>16:15:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9089</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-6</JourneyPatternRef>
+      <DepartureTime>17:25:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9090</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-7</JourneyPatternRef>
+      <DepartureTime>18:35:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9091</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-7</JourneyPatternRef>
+      <DepartureTime>19:35:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9092</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-7</JourneyPatternRef>
+      <DepartureTime>20:35:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CB000</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <ServicedOrganisationDayType>
+          <DaysOfOperation>
+            <WorkingDays>
+              <ServicedOrganisationRef>102</ServicedOrganisationRef>
+            </WorkingDays>
+          </DaysOfOperation>
+        </ServicedOrganisationDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>9093</VehicleJourneyCode>
+      <ServiceRef>CBAM001</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_CBAM001-7</JourneyPatternRef>
+      <DepartureTime>21:35:00</DepartureTime>
+    </VehicleJourney>
+  </VehicleJourneys>
+</TransXChange>
