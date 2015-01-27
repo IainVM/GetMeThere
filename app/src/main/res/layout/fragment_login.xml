@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="getmethere.group9.com.getmethere.fragment.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#282828">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="40sp"
+            android:text="@string/app_name"
+            android:textIsSelectable="false"
+            android:layout_weight="0.10"
+            android:textStyle="bold"
+            android:textColor="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/login_email"
+            android:textColor="#33B5E5"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/example_email"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/login_pass"
+            android:textColor="#33B5E5"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="********"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_btn"
+            android:id="@+id/login_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555"
+            android:textColor="#33B5E5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register_btn"
+            android:id="@+id/register_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555"
+            android:textColor="#33B5E5" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

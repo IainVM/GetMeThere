@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="getmethere.group9.com.getmethere.fragment.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#282828">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="40sp"
+            android:text="@string/app_name"
+            android:textIsSelectable="false"
+            android:layout_weight="0.10"
+            android:textStyle="bold"
+            android:textColor="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/registering_1"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registering_email"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/example_email"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/registering_2"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registering_user"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/registering_box_2"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/registering_3"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/registering_pass"
+            android:layout_gravity="center_horizontal"
+            android:hint="********"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/registering_4"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/registering_pass_conf"
+            android:layout_gravity="center_horizontal"
+            android:hint="********"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registered_btn"
+            android:id="@+id/register_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
