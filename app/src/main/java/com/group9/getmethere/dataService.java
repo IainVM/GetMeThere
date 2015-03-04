@@ -37,11 +37,11 @@ public class dataService {
 
 	/* Other sections */
 	// Route sections
-	dataRouteSects routeSects;
+	public dataRouteSects routeSects;
 	// Pattern sections
-	dataPatternSects patternSects;
+	public dataPatternSects patternSects;
 	// Dictionary of journeys
-	dataJourneys journeys;
+	public dataJourneys journeys;
 
 	public dataService() {
 		stdService   = new dataStandard();
@@ -55,9 +55,9 @@ public class dataService {
 	/* JOURNEY RELATED METHODS */
 
 	// Returns the previously active journey time (or 0 if none found)
-	public int previousJourney( dataTimeDate tDNow, dataTimeDate tDSim ) {
+	public int previousJourney( dataTimeDate tDNow, dataTimeDate tDSim, boolean live ) {
 		boolean found = false;
-		int active = activeJourney( tDNow, tDSim );
+		int active = activeJourney( tDNow, tDSim, live );
 		int current, previous = 0;
 	
                 List < Integer > journeyTimesList = new ArrayList < Integer >( journeys.journeys.keySet() );
@@ -86,7 +86,7 @@ public class dataService {
 	}
 
 	/* A return value of NOT_FOUND means NO currently active journey for this service */
-	public int activeJourney( dataTimeDate tDNow, dataTimeDate tDSim ) {
+	public int activeJourney( dataTimeDate tDNow, dataTimeDate tDSim, boolean live ) {
 		boolean found = false;
 		int selected = NOT_FOUND;
 		int previous = 0, current, journeyRunTime;
@@ -100,7 +100,7 @@ public class dataService {
 
 		while( journeyTimes.hasNext() && found != true ) {
 			current = (Integer) journeyTimes.next();
-			journeyRunTime = journeyRunTime( tDNow, current );
+			journeyRunTime = journeyRunTime( tDNow, current, live );
 			// Check to see if the current journey is in scope
 			if( journey( current ).hasDay( tDSim.dayByte() ) &&
                             current <= tDSim.time() && current + journeyRunTime > tDSim.time() ) {
@@ -114,14 +114,14 @@ public class dataService {
 	}
 
 	// Returns a value denoting the run state of a given journey, or an error if the journey is not known
-	public byte stateJourney( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
+	public byte stateJourney( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
                 // Only test if we have a matching journey
 		if( journeys.journeys.keySet().contains( departureTime ) ) {
                         // And only test further if it's running on this day
                         if( journey( departureTime ).hasDay( tDSim.dayByte() ) ) {
         			if( departureTime > tDSim.time() )
 	        			return NOT_DEPARTED;
-        			if( departureTime + journeyRunTime( tDNow, departureTime ) <= tDSim.time() )
+        			if( departureTime + journeyRunTime( tDNow, departureTime, live ) <= tDSim.time() )
         				return ARRIVED;
         			return RUNNING;
                         }
@@ -193,7 +193,7 @@ public class dataService {
 	}
 
 	// Returns the total run-time of a journey from origin to destination
-	public int journeyRunTime( dataTimeDate tDNow, int departureTime ) {
+	public int journeyRunTime( dataTimeDate tDNow, int departureTime, boolean live ) {
 		int total = 0;
 		dataPatternSect dPS = patternSection( departureTime );
 
@@ -207,8 +207,13 @@ public class dataService {
 //                        // TESTING ONLY
 //                        Log.i( TAG, "[dataService] journeyRunTime(): **TEST** Using depTime " + departureTime );
 //                        // TESTING END
-                        // Don't send a departureTime (it would cause expiry of any updated run times
-			total += dPS.patternLinks.get( linkID.next() ).getRunTime( tDNow, -1 );
+                        // Are we using any acquired live times?
+                        if( live )
+                            // Don't send a departureTime (it would cause expiry of any updated run times)
+        			total += dPS.patternLinks.get( linkID.next() ).getRunTime( tDNow, -1 );
+                        // Otherwise, use only scheduled times
+                        else
+                                total += dPS.patternLinks.get( linkID.next() ).getScheduledRunTime();
 		}
 
 		return total;
@@ -300,7 +305,7 @@ public class dataService {
         }
 
 	// Returns the number of the currently active journey pattern timing link for a given time and service
-	public int activeLinkNo( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
+	public int activeLinkNo( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
 		int linkNo = 1;
 		int timeNext, timePrevious = departureTime;
 
@@ -321,7 +326,12 @@ public class dataService {
 //                                Log.i( TAG, "[dataService] activeLinkNo(): **TEST** Using depTime " + departureTime );
 //                                // TESTING END
 
-				timeNext = timePrevious + dPL.getRunTime( tDNow, departureTime );
+                                // Are we using any acquired live times?
+                                if( live )
+        				timeNext = timePrevious + dPL.getRunTime( tDNow, departureTime );
+                                // Otherwise, use only scheduled times
+                                else
+                                        timeNext = timePrevious + dPL.getScheduledRunTime();
 				// If the current time is between the previous and next stop times...
 				if( timePrevious <= tDSim.time() && timeNext > tDSim.time() )
 					// ... return the index number (1..n) of this link
@@ -336,7 +346,7 @@ public class dataService {
 
 	// Returns the currently active journey pattern timing link for a given time and service
 	//  Otherwise, returns the LAST link (just in case it is still active!)
-	public dataPatternLink activeLink( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
+	public dataPatternLink activeLink( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
 		int timeNext, timePrevious = departureTime;
 		dataPatternLink dPL = null;
 
@@ -356,7 +366,14 @@ public class dataService {
 //                                Log.i( TAG, "[dataService] activeLink(): **TEST** Using depTime " + departureTime );
 //                                // TESTING END
 
-				timeNext = timePrevious + dPL.getRunTime( tDNow, departureTime );
+                                // TODO: Flag-change below to dPL.getScheduledRunTime() to get NON-live data!
+                                //  (also, alter calls to activeLink(), activeLinkProgress() etc. to allow flag passing
+                                // Are we using any aquired live times?
+                                if( live )
+				    timeNext = timePrevious + dPL.getRunTime( tDNow, departureTime );
+                                // Otherwise, return the scheduled times
+                                    timeNext = timePrevious + dPL.getScheduledRunTime();
+
 				// If the current time is between the previous and next stop times...
 				if( timePrevious <= tDSim.time() && timeNext > tDSim.time() )
 					// ... return the index number (1..n) of this link
@@ -374,16 +391,16 @@ public class dataService {
 	/* STOP RELATED METHODS */
 
 	// Returns the previous StopPointRef for the active link of the given journey
-	public String activeStopRefFrom( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
-		dataPatternLink dPL = activeLink( tDNow, tDSim, departureTime );
+	public String activeStopRefFrom( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
+		dataPatternLink dPL = activeLink( tDNow, tDSim, departureTime, live );
 		if( dPL != null )
 			return dPL.stopRefFrom;
 		return null;
 	}
 
 	// Returns the next StopPointRef for the active link of the given journey
-	public String activeStopRefTo( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
-		dataPatternLink dPL = activeLink( tDNow, tDSim, departureTime );
+	public String activeStopRefTo( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
+		dataPatternLink dPL = activeLink( tDNow, tDSim, departureTime, live );
 		if( dPL != null )
 			return dPL.stopRefTo;
 		return null;
@@ -430,7 +447,7 @@ public class dataService {
 	// Returns the time (s) taken from departureTime to reach stop n
 	// n = 1 = first stop, so always returns FROM time until last link (then TO time)
 	// Returns NOT_FOUND if there is an error
-	public int offsetToStopNo( dataTimeDate tDNow, int departureTime, int n ) {
+	public int offsetToStopNo( dataTimeDate tDNow, int departureTime, int n, boolean live ) {
 		int index = 1, offset = NOT_FOUND;
 
 		dataPatternSect dPS = patternSection( departureTime );
@@ -451,7 +468,12 @@ public class dataService {
 //                                        Log.i( TAG, "[dataService] offsetToStopNo(): **TEST** Using depTime " + departureTime );
 //                                        // TESTING END
 
-					offset += dPL.getRunTime( tDNow, departureTime );
+                                        // Are we using any acquired live times?
+                                        if( live )
+        					offset += dPL.getRunTime( tDNow, departureTime );
+                                        // Otherwise, use only scheduled times
+                                        else
+                                                offset += dPL.getScheduledRunTime();
 					index ++;
 				}
 			}
@@ -462,8 +484,8 @@ public class dataService {
 
 	// Returns the actual time stop n will be reached
 	// Returns NOT_FOUND if there was an error
-	private int timeToStopNo( dataTimeDate tDNow, int departureTime, int n ) {
-		int time = offsetToStopNo( tDNow, departureTime, n );
+	private int timeToStopNo( dataTimeDate tDNow, int departureTime, int n, boolean live ) {
+		int time = offsetToStopNo( tDNow, departureTime, n, live );
 		if( time != NOT_FOUND )
 			return departureTime + time;
 		return NOT_FOUND;
@@ -471,7 +493,7 @@ public class dataService {
 
 	// Returns the time (s) taken from departureTime to reach / leave stop <ref>
 	// Returns NOT_FOUND if there is an error
-	private int offsetToStopRef( dataTimeDate tDNow, int departureTime, String stopRef ) {
+	private int offsetToStopRef( dataTimeDate tDNow, int departureTime, String stopRef, boolean live ) {
 		int offset = NOT_FOUND;
 
 		// Get a pattern section for the given service
@@ -493,7 +515,12 @@ public class dataService {
 				if( dPL.stopRefFrom.equals( stopRef ) )
 					return offset;
 
-				offset += dPL.getRunTime( tDNow, departureTime );
+                                // Are we using any acquired live times?
+                                if( live )
+        				offset += dPL.getRunTime( tDNow, departureTime );
+                                // Otherwise, use only scheduled times
+                                else
+                                        offset += dPL.getScheduledRunTime();
 
 				// Otherwise, does this link end at the given stop?
 				if( dPL.stopRefTo.equals( stopRef ) )
@@ -551,8 +578,8 @@ public class dataService {
 
 	// Returns the actual time stop <ref> will be reached
 	// Returns NOT_FOUND if there was an error
-	public int timeToStopRef( dataTimeDate tDNow, int departureTime, String stopRef ) {
-		int time = offsetToStopRef( tDNow, departureTime, stopRef );
+	public int timeToStopRef( dataTimeDate tDNow, int departureTime, String stopRef, boolean live ) {
+		int time = offsetToStopRef( tDNow, departureTime, stopRef, live );
 		if( time != NOT_FOUND )
 			return departureTime + time;
 		return NOT_FOUND;
@@ -568,21 +595,21 @@ public class dataService {
         }
 
         // Returns the progress between last and next stops as a float between 0 and 1
-        public float activeLinkProgress( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime ) {
-                String activeFrom = activeStopRefFrom( tDNow, tDSim, departureTime );
-                String activeTo   = activeStopRefTo(   tDNow, tDSim, departureTime );
+        public float activeLinkProgress( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
+                String activeFrom = activeStopRefFrom( tDNow, tDSim, departureTime, live );
+                String activeTo   = activeStopRefTo(   tDNow, tDSim, departureTime, live );
 
-                return linkProgress( tDNow, tDSim, departureTime, activeFrom, activeTo );
+                return linkProgress( tDNow, tDSim, departureTime, activeFrom, activeTo, live );
         }
 
 	// Returns the progress between last and next stops as a float between 0 and 1
         //  tDSim = desired calculation time (note ONLY time field is in use here - programmer checks for a valid day),
         //  tDNow = current actual time, from/to = stop refs, dept. time = journey ref
-	public float linkProgress( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, String stopFrom, String stopTo ) {
+	public float linkProgress( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, String stopFrom, String stopTo, boolean live ) {
 		// Do we have valid from and to stop references?
 		if( stopFrom != null && stopTo != null ) {
-			int timeFrom = timeToStopRef( tDNow, departureTime, stopFrom );
-			int timeTo   = timeToStopRef( tDNow, departureTime, stopTo   );
+			int timeFrom = timeToStopRef( tDNow, departureTime, stopFrom, live );
+			int timeTo   = timeToStopRef( tDNow, departureTime, stopTo,   live );
 
 			// Do we have valid from and to stop times?
 			if( timeFrom != NOT_FOUND && timeTo != NOT_FOUND ) {
@@ -607,10 +634,11 @@ public class dataService {
 
 	/* LIVE SERVICE UPDATE RELATED METHODS */
 
+        // (No use of 'live' flag here since updates will always be done on dynamic data)
 	public boolean update( dataTimeDate tDNow, dataSiriChange dSC ) {
 		// Find the JourneyPatternSection that needs updating...
 		//  (here, I'm assuming it's an active one for the given aimed time...)
-		int journey = activeJourney( tDNow, dSC.aimed );
+		int journey = activeJourney( tDNow, dSC.aimed, true );
 		// If we've got a valid journey to search, do so
 		if( journey != NOT_FOUND ) {
 //if( DEBUG )                
@@ -627,7 +655,7 @@ public class dataService {
 					if( dPL.stopRefTo.equals( dSC.stopRef ) ) {
                                                 // ...calculate the current time to stop
 //                                                int timeTo = scheduledTimeToStopRef( journey, dSC.stopRef );
-                                                int timeTo = timeToStopRef( tDNow, journey, dSC.stopRef );
+                                                int timeTo = timeToStopRef( tDNow, journey, dSC.stopRef, true );
                                                 // Use this to update (so new run-times are relative to 'live' times in use)
                                                 // TESTING ONLY
                                                 dPL.DEBUG = true;

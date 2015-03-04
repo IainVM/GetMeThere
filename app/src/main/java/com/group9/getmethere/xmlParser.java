@@ -51,7 +51,7 @@ public class xmlParser {
 			inputData.reset();
 		}
 		catch( IOException e ) {
-		        Log.e(TAG, "IOException (in xmlParser [reset()]): " + e);
+		        Log.e( TAG, "IOException (in xmlParser [reset()]): " + e );
 		}
 	}
 

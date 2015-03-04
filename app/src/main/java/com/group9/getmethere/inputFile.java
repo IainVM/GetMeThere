@@ -16,7 +16,7 @@ public class inputFile {
 
 	// Defines
         private static final String ENCODING = "UTF-8";
-	private static final int READAHEAD_MAX	= 300000;
+	private static final int READAHEAD_MAX	= 3000000;
 	//
 
         private AssetManager assets;

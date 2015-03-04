@@ -59,7 +59,7 @@ public class siriUpdate implements Runnable {
         // For debug output only
         private void showRunTimes() {
             String output = "Runtimes: ";
-            String stopRef = service.activeStopRefTo( tDNow, tDSim, activeJourney );
+            String stopRef = service.activeStopRefTo( tDNow, tDSim, activeJourney, true );
             int linkNoMax = service.linkNoWithStopRefTo( activeJourney, stopRef );
 
             for( int linkNo = 1; linkNo <= linkNoMax; linkNo++ ) {

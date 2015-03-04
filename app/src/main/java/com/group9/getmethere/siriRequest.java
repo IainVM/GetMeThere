@@ -70,8 +70,8 @@ public class siriRequest {
 
         // Only using <time> field of tD here
 	public boolean send( dataTimeDate tD ) {
-		// Only perform this request if timeout has elapsed
-		if( timeout( tD.time() ) )
+		// Only perform this request if timeout has elapsed (and we have a password!)
+		if( timeout( tD.time() ) && password != "" )
 		{
                         dataTimeDate tDCurrent = new dataTimeDate();
                         tDCurrent.setCurrent();

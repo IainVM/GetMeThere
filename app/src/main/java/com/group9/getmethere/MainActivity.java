@@ -64,8 +64,9 @@ public class MainActivity //ifdef android
 
     //  Back-end related fields
     private static final int SLEEP_PERIOD = 1000;   // ms
-    private tndsParse tnds;
+    private tndsParse tnds = new tndsParse();
     private String serviceName;
+    public  String serviceNames[] = { "1", "15", "28A", "35", "54", "57", "58", "65", "M1", "M2" };
     private int selectedJourney;
     private dataService service;
     private dataTimeDate tD = new dataTimeDate();
@@ -107,8 +108,13 @@ public class MainActivity //ifdef android
         Log.i( TAG, "Done map setup. Beginning services setup." );
         // Service & stops setup
         serviceName = "54";
-        busName= serviceName;
-        tnds = new tndsParse( assets, serviceName + ".xml" );
+        busName = serviceName;
+        /* Bodged addition of other services! ** FIX ME */
+        for( int i = 0; i < serviceNames.length; i++ )
+            tnds.parse( assets, serviceNames[ i ] + ".xml" );
+        // TEST ONLY
+        testTNDS();
+        /* End of bodge */
         naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
         Log.i( TAG, "Done setting up service. Initialising..." );
         service = tnds.services.get( serviceName );
@@ -119,7 +125,8 @@ public class MainActivity //ifdef android
             // Start the SIRI-SM update class
             siri = new siriUpdate( tnds, service );
             siriThread = new Thread( siri );
-            siriThread.start();
+            // TEST ONLY
+//            siriThread.start();
 
 //ifdef android
             // Plot stops on map
@@ -134,6 +141,20 @@ public class MainActivity //ifdef android
         }
     }
 
+    // TEST ONLY
+    private void testTNDS() {
+        for( int i = 0; i < serviceNames.length; i++ ) {
+            dataService s = tnds.services.get( serviceNames[ i ] );
+            // This MUST be checked!
+            if( s == null )
+                Log.e( TAG, "ERROR: NO SERVICE FOUND (" + serviceNames[ i ] + ")" );
+            else {
+                Log.i( TAG, "Service " + serviceNames[ i ] + ": from " + s.stdService.origin + " to " + s.stdService.destination );
+            }
+        }
+    }
+    // END OF TEST
+
     private class mainLoop implements Runnable {
 
         public void run() {
@@ -142,24 +163,63 @@ public class MainActivity //ifdef android
                 // Get the current time
                 tD.setCurrent();
                 // Select the currently active journey
-                selectedJourney = service.activeJourney( tD, tD );
-//                Log.i( TAG, "Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Selected journey: " + selectedJourney );
+                selectedJourney = service.activeJourney( tD, tD, true );
+                // ACTIVATE BELOW CODE FOR VERBOSE LOGGING
+                Log.i( TAG, "Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Selected journey: " + selectedJourney );
+                // TEST ONLY - JOURNEY 2
+                String serviceName2 = "M1";
+                dataService service2 = tnds.services.get( serviceName2 );
+                int selectedJourney2 = service2.activeJourney( tD, tD, false );
+                Log.i( TAG, "2: Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Selected journey: " + selectedJourney2 );
+                if( selectedJourney2 != service2.NOT_FOUND ) {
+                    // TESTING OUTPUT BLOCK //
+                    String stopRefFromTest2 = service2.activeStopRefFrom( tD, tD, selectedJourney2, false );
+                    String stopRefToTest2   = service2.activeStopRefTo(   tD, tD, selectedJourney2, false );
+                    String stopNameFrom2 = tnds.stops.name( stopRefFromTest2 );
+                    String stopNameTo2   = tnds.stops.name( stopRefToTest2 );
+                    float progress2 = service2.activeLinkProgress( tD, tD, selectedJourney2, false );
+                    int progPercent2 = (int) ( progress2 * 100 );
+                    Log.i( TAG, "2: Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Service " + serviceName2 + "-" + selectedJourney2 + " | From " + stopNameFrom2 + " to " + stopNameTo2 + " | Progress " + progPercent2 + "%" );
+                    // TESTING OUTPUT BLOCK ENDS //
+
+                    // Check for service updates
+                    String stopRefTo2 = service2.activeStopRefTo( tD, tD, selectedJourney2, false );    // Change to TRUE for live!!
+                    // TEST ONLY - no update yet!
+//                    siri.update2( tD, tD, serviceName2, selectedJourney2, stopRefTo2 );
+//ifdef android		    
+//                  // CANNOT YET RUN HERE - because called pARLP() only handles one, hard-wired journey!
+//                    // Perform the UI updates
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            plotAllRouteLinkProgress( tD, selectedJourney );
+//                        }
+//                    });
+//endif android		    
+                }
+                // TEST ONLY - no update yet!
+//                else
+//                    // If we don't have a journey, turn off the update system
+//                    siri.suspend();
+//
+//                }
+                // END TEST - JOURNEY 2
 
                 // If we have one, check the NextBuses system, and plot it on the map
                 if( selectedJourney != service.NOT_FOUND ) {
 
                     // TESTING OUTPUT BLOCK //
-                    String stopRefFromTest = service.activeStopRefFrom( tD, tD, selectedJourney );
-                    String stopRefToTest   = service.activeStopRefTo(   tD, tD, selectedJourney );
+                    String stopRefFromTest = service.activeStopRefFrom( tD, tD, selectedJourney, true );
+                    String stopRefToTest   = service.activeStopRefTo(   tD, tD, selectedJourney, true );
                     String stopNameFrom = tnds.stops.name( stopRefFromTest );
                     String stopNameTo   = tnds.stops.name( stopRefToTest );
-                    float progress = service.activeLinkProgress( tD, tD, selectedJourney );
+                    float progress = service.activeLinkProgress( tD, tD, selectedJourney, true );
                     int progPercent = (int) ( progress * 100 );
                     Log.i( TAG, "Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Service " + serviceName + "-" + selectedJourney + " | From " + stopNameFrom + " to " + stopNameTo + " | Progress " + progPercent + "%" );
                     // TESTING OUTPUT BLOCK ENDS //
 
                     // Check for service updates
-                    String stopRefTo = service.activeStopRefTo( tD, tD, selectedJourney );
+                    String stopRefTo = service.activeStopRefTo( tD, tD, selectedJourney, true );
                     siri.update( tD, tD, serviceName, selectedJourney, stopRefTo );
 //ifdef android		    
                     // Perform the UI updates
@@ -279,7 +339,8 @@ public class MainActivity //ifdef android
     //  Returns false if no progress was plotted
     private boolean plotRouteLinkProgress( dataTimeDate tD, int chosenJourney, String stopFrom, String stopTo ) {
         // Find the progress between the two stops at time <time> for <chosenJourney>
-        double progress = service.linkProgress( tD, tD, chosenJourney, stopFrom, stopTo );
+        //  (using live times here, assuming map is to display all live data)
+        double progress = service.linkProgress( tD, tD, chosenJourney, stopFrom, stopTo, true );
 
         // Only plot if we have some progress to show
         if( progress > 0f ) {
