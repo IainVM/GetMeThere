@@ -47,6 +47,18 @@ public class backendAPI {
         }
     }
 
+    // Returns the current time as a string
+    public String currentTime() {
+        tD.setCurrent();
+        return tD.hour() + ":" + tD.minute() + ":" + tD.second();
+    }
+
+    // Returns the current time as a dataTime object
+    public dataTime dtCurrentTime() {
+        tD.setCurrent();
+        return new dataTime( tD.time() );
+    }
+
     // Returns the total number of known services
     public int services() {
         return busses.size();
@@ -155,5 +167,79 @@ public class backendAPI {
         }
 
         return -1;
+    }
+
+    // Returns a String representation of the scheduled time of arrival at the next stop
+    public String strScheduledTimeOfArrival( String serviceName ) {
+        dataTime dT = scheduledTimeOfArrival( serviceName );
+        if( dT != null )
+            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+
+        return null;
+    }
+
+    // Returns a String representation of the scheduled time of arrival at the next stop
+    public String strTimeOfArrival( String serviceName ) {
+        dataTime dT = timeOfArrival( serviceName );
+        if( dT != null )
+            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+
+        return null;
+    }
+
+    // Returns a String representation of the delay of time of arrival to the next stop
+    public String strTimeOfArrivalDelay( String serviceName ) {
+        dataTime dT = timeOfArrivalDelay( serviceName );
+        if( dT != null )
+            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+
+        return null;
+    }
+
+    // Returns the scheduled time of arrival at the next stop
+    public dataTime scheduledTimeOfArrival( String serviceName ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName );
+        // Does the service exist?
+        if( service != null ) {
+            // Which journey is currently in progress?
+            int journey = service.activeJourney( tD, tD, false );
+            if( journey != service.NOT_FOUND ) {
+                return new dataTime( service.scheduledTimeToStopRef( journey, service.activeStopRefTo( tD, tD, journey, false ) ) );
+            }
+        }
+
+        return null;
+    }
+
+    // Returns the scheduled time of arrival at the next stop
+    public dataTime timeOfArrival( String serviceName ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName );
+        // Does the service exist?
+        if( service != null ) {
+            // Which journey is currently in progress?
+            int journey = service.activeJourney( tD, tD, false );
+            if( journey != service.NOT_FOUND ) {
+                tD.setCurrent();
+                return new dataTime( service.timeToStopRef( tD, journey, service.activeStopRefTo( tD, tD, journey, false ), false ) );
+            }
+        }
+
+        return null;
+    }
+
+    // Returns the delay of time of arrival to the next stop
+    public dataTime timeOfArrivalDelay( String serviceName ) {
+        dataTime scheduled = scheduledTimeOfArrival( serviceName );
+        dataTime live      = timeOfArrival( serviceName );
+        if( scheduled != null && live != null )
+            return new dataTime( scheduled.time - live.time );
+
+        return null;
     }
 }

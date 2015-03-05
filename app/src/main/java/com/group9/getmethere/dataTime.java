@@ -16,17 +16,17 @@ public class dataTime {
 	public int minutes;
 	public int hours;
 
-	public void dataTime() {
+	public dataTime() {
 		time = 0;
 		hours = 0; minutes = 0; seconds = 0;
 	}
 
-	public void dataTime( int t ) {
+	public dataTime( int t ) {
 		time = t;
 		calcHMS();
 	}
 
-	public void dataTime( int h, int m, int s ) {
+	public dataTime( int h, int m, int s ) {
 		setHMS( h, m, s );
 		calcTime();
 	}

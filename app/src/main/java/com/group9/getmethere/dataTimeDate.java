@@ -110,7 +110,6 @@ public class dataTimeDate {
         return set;
     }
 
-
     // Integer value getters
     public int time() {
         if( set ) {

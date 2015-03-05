@@ -25,8 +25,8 @@ public class siriRequest {
 	//
 
 	// Account details
-	public static final String username	= "";
-	public static final String password	= "";
+	public static final String username	= "TravelineAPI288";
+	public static final String password	= "nRBA93Az";
 	//
 
 	// Request tags
@@ -70,8 +70,8 @@ public class siriRequest {
 
         // Only using <time> field of tD here
 	public boolean send( dataTimeDate tD ) {
-		// Only perform this request if timeout has elapsed (and we have a password!)
-		if( timeout( tD.time() ) && password != "" )
+		// Only perform this request if timeout has elapsed
+		if( timeout( tD.time() ) )
 		{
                         dataTimeDate tDCurrent = new dataTimeDate();
                         tDCurrent.setCurrent();
