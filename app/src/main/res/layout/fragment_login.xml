@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="getmethere.group9.com.getmethere.fragment.LoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/tab1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#282828">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="40sp"
+            android:text="@string/app_name"
+            android:textIsSelectable="false"
+            android:layout_weight="0.10"
+            android:textStyle="bold"
+            android:textColor="#33B5E5"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView2" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/login_email"
+            android:textColor="#33B5E5"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="60dp"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/example_email"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignEnd="@+id/textView2" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/login_pass"
+            android:textColor="#33B5E5"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="********"
+            android:gravity="center_horizontal"
+            android:background="#33B5E5"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_btn"
+            android:id="@+id/login_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555"
+            android:textColor="#33B5E5"
+            android:layout_below="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register_btn"
+            android:id="@+id/register_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555"
+            android:textColor="#33B5E5"
+            android:layout_below="@+id/login_btn"
+            android:layout_alignStart="@+id/login_btn"
+            android:layout_alignEnd="@+id/login_btn"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

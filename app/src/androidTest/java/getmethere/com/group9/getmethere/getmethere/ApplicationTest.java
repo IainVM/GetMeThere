@@ -1,4 +1,4 @@
-package getmethere.group9.com.getmethere;
+package getmethere.com.group9.getmethere.getmethere;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

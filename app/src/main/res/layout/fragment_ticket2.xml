@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="getmethere.group9.com.getmethere.fragment.TicketFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#282828">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/ticket_card_name"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket_card_name_in"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="#555555" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/ticket_card_num"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket_card_num_in"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="#555555" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/ticket_card_sdate"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket_card_sdate_in"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="#555555" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/ticket_card_edate"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket_card_edate_in"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="#555555" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/ticket_card_snum"
+            android:textColor="#33B5E5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket_card_snum_in"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="#555555" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registered_btn"
+            android:id="@+id/ticket2_btn"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#555555" />
+
+    </LinearLayout>
+
+</FrameLayout>
