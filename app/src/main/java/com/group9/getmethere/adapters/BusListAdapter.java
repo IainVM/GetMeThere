@@ -14,12 +14,17 @@ import com.group9.getmethere.backend.backendAPI;
 
 public class BusListAdapter extends ArrayAdapter<String> {
     private final Context context;
-//    private final backendAPI api;
+    private final String[] busNames;
+    private final String[] busTos;
+    private final String[] busFroms;
 
-    public BusListAdapter(Context context) {
-        super(context, R.layout.bus_list_item);
+
+    public BusListAdapter(Context context, String[] busNames, String[] busFroms, String[] busTos) {
+        super(context, R.layout.bus_list_item, busNames);
         this.context = context;
-//        this.api = new backendAPI(context);
+        this.busNames = busNames;
+        this.busFroms = busFroms;
+        this.busTos = busTos;
     }
 
     @Override
@@ -28,15 +33,11 @@ public class BusListAdapter extends ArrayAdapter<String> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.bus_list_item, parent, false);
         TextView textView = (TextView) rowView.findViewById(R.id.busName);
-//        textView.setText(api.name(position));
-        textView.setText("name");
-        textView = (TextView) rowView.findViewById(R.id.busName);
-//        textView.setText(api.to(position));
-        textView.setText("to");
+        textView.setText(busNames[position]);
         textView = (TextView) rowView.findViewById(R.id.busTo);
-//        textView.setText(api.from(position));
-        textView.setText("to");
+        textView.setText(busTos[position]);
         textView = (TextView) rowView.findViewById(R.id.busFrom);
+        textView.setText(busFroms[position]);
 
         return rowView;
     }

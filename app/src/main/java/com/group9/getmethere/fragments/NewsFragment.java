@@ -1,5 +1,6 @@
 package com.group9.getmethere.fragments;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.group9.getmethere.MainActivity;
 import com.group9.getmethere.R;
 import com.group9.getmethere.adapters.BusListAdapter;
 
@@ -48,20 +50,27 @@ public class NewsFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_news, container, false);
 
         populateBuses(rootView);
         eventHandle(rootView);
-        //TestFRContract.FeedEntry.TestFRDbHelper mDbHelper = new TestFRContract.FeedEntry.TestFRDbHelper(rootView.getContext());
 
         return rootView;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            mCallback = (OnBusSelectedListener) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnBusSelectedListener");
+        }
+        ((MainActivity) activity).onSectionAttached(
+                getArguments().getInt(ARG_SECTION_NUMBER));
     }
 
     @Override
@@ -86,7 +95,14 @@ public class NewsFragment extends Fragment {
 
 
     public void populateBuses(final View rootView){
-        BusListAdapter recAdapter = new BusListAdapter(this.getActivity());
+
+        //construct the arrays to show in the list
+        String[] busNames = {"BusName1","BusName2"};
+        String[] busTos = {"BusTo1","BusTo2"};
+        String[] busFroms = {"BusTo1","BusTo2"};
+
+
+        BusListAdapter recAdapter = new BusListAdapter(this.getActivity(), busNames, busFroms, busTos);
 
         // ListViews display data in a scrollable list
         ListView NewsListView = (ListView) rootView.findViewById(R.id.news_list);

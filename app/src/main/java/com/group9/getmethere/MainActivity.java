@@ -12,7 +12,8 @@ import android.support.v4.widget.DrawerLayout;
 import com.group9.getmethere.fragments.*;
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks,
+        NewsFragment.OnBusSelectedListener
 {
 
     /**
@@ -109,6 +110,36 @@ public class MainActivity extends ActionBarActivity
         actionBar.setTitle(mTitle);
     }
 
+    public void onBusSelected(int position){
+        Fragment newFragment = BusFragment.newInstance(6);
+        Bundle args = new Bundle();
+        args.putInt("busID", position);
+        newFragment.setArguments(args);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, newFragment);
+        transaction.addToBackStack(null);
+
+        transaction.commit();
+    }
+    public void onBusSelected(String busName){
+        Fragment newFragment = BusFragment.newInstance(6);
+        Bundle args = new Bundle();
+
+        //TODO: need logic to go through the busses and find the position that corrisponds to this busName
+        int position = 0; //using as default for now
+
+
+
+        args.putInt("busID", position);
+        newFragment.setArguments(args);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, newFragment);
+        transaction.addToBackStack(null);
+
+        transaction.commit();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
