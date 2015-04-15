@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransXChange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2015-03-26T12:14:00-00:00" ModificationDateTime="2015-03-26T12:14:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRSMCO010-20131004-4103.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
+  <StopPoints>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710WDB48389</StopPointRef>
+      <CommonName>Wentloog Industrial Park</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710WDB48388</StopPointRef>
+      <CommonName>Capital Business Park</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710WDB48387</StopPointRef>
+      <CommonName>Lamby Way Depot</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWL26187</StopPointRef>
+      <CommonName>Rover Way</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10222</StopPointRef>
+      <CommonName>City Link</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10223</StopPointRef>
+      <CommonName>Royal Oak</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10236</StopPointRef>
+      <CommonName>Stacey Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10237</StopPointRef>
+      <CommonName>Priest Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10238</StopPointRef>
+      <CommonName>Piercefield Place</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10239</StopPointRef>
+      <CommonName>Infirmary 4</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA10242</StopPointRef>
+      <CommonName>Blind Institute</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA12737</StopPointRef>
+      <CommonName>Dumfries Place</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11081</StopPointRef>
+      <CommonName>Greyfriars Road</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710AWA11097</StopPointRef>
+      <CommonName>Kingsway</CommonName>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>5710WDB48391</StopPointRef>
+      <CommonName>Westgate Street</CommonName>
+    </AnnotatedStopPointRef>
+  </StopPoints>
+  <RouteSections>
+    <RouteSection id="SMCO010_008_20131003">
+      <RouteLink id="SMCO010_008_20131003_186752">
+        <From>
+          <StopPointRef>5710WDB48389</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48388</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186753">
+        <From>
+          <StopPointRef>5710WDB48388</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48387</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186754">
+        <From>
+          <StopPointRef>5710WDB48387</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWL26187</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186755">
+        <From>
+          <StopPointRef>5710AWL26187</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10222</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186756">
+        <From>
+          <StopPointRef>5710AWA10222</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10223</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186757">
+        <From>
+          <StopPointRef>5710AWA10223</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10236</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186758">
+        <From>
+          <StopPointRef>5710AWA10236</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10237</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186759">
+        <From>
+          <StopPointRef>5710AWA10237</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10238</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186760">
+        <From>
+          <StopPointRef>5710AWA10238</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10239</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186761">
+        <From>
+          <StopPointRef>5710AWA10239</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10242</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186762">
+        <From>
+          <StopPointRef>5710AWA10242</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA12737</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186763">
+        <From>
+          <StopPointRef>5710AWA12737</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11081</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186764">
+        <From>
+          <StopPointRef>5710AWA11081</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11097</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+      <RouteLink id="SMCO010_008_20131003_186765">
+        <From>
+          <StopPointRef>5710AWA11097</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48391</StopPointRef>
+        </To>
+        <Direction>inbound</Direction>
+      </RouteLink>
+    </RouteSection>
+  </RouteSections>
+  <Routes>
+    <Route id="SMCO010_008_20131003">
+      <Description>IB std jny 05 10 2013
+</Description>
+      <RouteSectionRef>SMCO010_008_20131003</RouteSectionRef>
+    </Route>
+  </Routes>
+  <JourneyPatternSections>
+    <JourneyPatternSection id="JPS_SMCO010-2">
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186752">
+        <From>
+          <StopPointRef>5710WDB48389</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48388</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186752</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT120S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186753">
+        <From>
+          <StopPointRef>5710WDB48388</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48387</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186753</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186754">
+        <From>
+          <StopPointRef>5710WDB48387</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWL26187</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186754</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186755">
+        <From>
+          <StopPointRef>5710AWL26187</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10222</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186755</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT16S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186756">
+        <From>
+          <StopPointRef>5710AWA10222</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10223</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186756</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186757">
+        <From>
+          <StopPointRef>5710AWA10223</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10236</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186757</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186758">
+        <From>
+          <StopPointRef>5710AWA10236</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10237</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186758</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186759">
+        <From>
+          <StopPointRef>5710AWA10237</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10238</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186759</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT72S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186760">
+        <From>
+          <StopPointRef>5710AWA10238</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10239</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186760</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186761">
+        <From>
+          <StopPointRef>5710AWA10239</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10242</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186761</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT55S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186762">
+        <From>
+          <StopPointRef>5710AWA10242</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA12737</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186762</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186763">
+        <From>
+          <StopPointRef>5710AWA12737</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11081</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186763</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT133S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186764">
+        <From>
+          <StopPointRef>5710AWA11081</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11097</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186764</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT86S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-2_186765">
+        <From>
+          <StopPointRef>5710AWA11097</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48391</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186765</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT261S</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="JPS_SMCO010-3">
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186752">
+        <From>
+          <StopPointRef>5710WDB48389</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48388</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186752</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT120S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186753">
+        <From>
+          <StopPointRef>5710WDB48388</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48387</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186753</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186754">
+        <From>
+          <StopPointRef>5710WDB48387</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWL26187</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186754</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT180S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186755">
+        <From>
+          <StopPointRef>5710AWL26187</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10222</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186755</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT16S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186756">
+        <From>
+          <StopPointRef>5710AWA10222</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10223</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186756</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT43S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186757">
+        <From>
+          <StopPointRef>5710AWA10223</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10236</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186757</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT62S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186758">
+        <From>
+          <StopPointRef>5710AWA10236</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10237</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186758</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT49S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186759">
+        <From>
+          <StopPointRef>5710AWA10237</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10238</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186759</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT72S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186760">
+        <From>
+          <StopPointRef>5710AWA10238</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10239</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186760</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT58S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186761">
+        <From>
+          <StopPointRef>5710AWA10239</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA10242</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186761</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT55S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186762">
+        <From>
+          <StopPointRef>5710AWA10242</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA12737</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186762</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT65S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186763">
+        <From>
+          <StopPointRef>5710AWA12737</StopPointRef>
+          <TimingStatus>PPT</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11081</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186763</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186764">
+        <From>
+          <StopPointRef>5710AWA11081</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710AWA11097</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186764</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="JPS_SMCO010-3_186765">
+        <From>
+          <StopPointRef>5710AWA11097</StopPointRef>
+          <TimingStatus>OTH</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>5710WDB48391</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RouteLinkRef>SMCO010_008_20131003_186765</RouteLinkRef>
+        <Direction>inbound</Direction>
+        <RunTime>PT0M</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+  </JourneyPatternSections>
+  <Operators>
+    <Operator id="NAD">
+      <NationalOperatorCode>NADT</NationalOperatorCode>
+      <OperatorCode>NAD</OperatorCode>
+      <OperatorShortName>N.A.T. Group</OperatorShortName>
+    </Operator>
+  </Operators>
+  <Services>
+    <Service>
+      <ServiceCode>SMCO010</ServiceCode>
+      <Lines>
+        <Line id="0">
+          <LineName>10</LineName>
+        </Line>
+      </Lines>
+      <OperatingPeriod>
+        <StartDate>2013-10-04</StartDate>
+      </OperatingPeriod>
+      <RegisteredOperatorRef>NAD</RegisteredOperatorRef>
+      <StopRequirements>
+        <NoNewStopsRequired />
+      </StopRequirements>
+      <Mode>bus</Mode>
+      <Description>Cardiff - Wentloog Industrial Park</Description>
+      <StandardService>
+        <Origin>Cardiff</Origin>
+        <Destination>Wentloog Industrial Park</Destination>
+        <JourneyPattern id="JPS_SMCO010-2">
+          <DestinationDisplay>Cardiff, Westgate Street, Stop KH</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_SMCO010-2</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="JPS_SMCO010-3">
+          <DestinationDisplay>Cardiff, Dumfries Place, Stop HX</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>JPS_SMCO010-3</JourneyPatternSectionRefs>
+        </JourneyPattern>
+      </StandardService>
+    </Service>
+  </Services>
+  <VehicleJourneys>
+    <VehicleJourney>
+      <OperatorRef>NAD</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>47806</VehicleJourneyCode>
+      <ServiceRef>SMCO010</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_SMCO010-2</JourneyPatternRef>
+      <DepartureTime>15:05:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>NAD</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>47807</VehicleJourneyCode>
+      <ServiceRef>SMCO010</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_SMCO010-3</JourneyPatternRef>
+      <EndDeadRun>
+        <ShortWorking>
+          <JourneyPatternTimingLinkRef>JPS_SMCO010-3_186762</JourneyPatternTimingLinkRef>
+        </ShortWorking>
+      </EndDeadRun>
+      <DepartureTime>17:00:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>NAD</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <AllBankHolidays />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <VehicleJourneyCode>47808</VehicleJourneyCode>
+      <ServiceRef>SMCO010</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_SMCO010-2</JourneyPatternRef>
+      <DepartureTime>17:45:00</DepartureTime>
+    </VehicleJourney>
+  </VehicleJourneys>
+</TransXChange>

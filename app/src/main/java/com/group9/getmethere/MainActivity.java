@@ -1,460 +1,191 @@
 package com.group9.getmethere;
 
-//ifdef android
-import android.app.Activity;
-//endif android
-import android.content.res.AssetManager;
-//ifdef android
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.Drawable;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
-//endif android
-import android.util.Log;
-//ifdef android
 import android.view.Menu;
 import android.view.MenuItem;
-//endif android
+import android.support.v4.widget.DrawerLayout;
+import android.content.res.AssetManager;
 
-//ifdef android
-import com.mapquest.android.maps.AnnotationView;
-import com.mapquest.android.maps.DefaultItemizedOverlay;
-import com.mapquest.android.maps.DrawableOverlay;
-import com.mapquest.android.maps.GeoPoint;
-import com.mapquest.android.maps.ItemizedOverlay;
-import com.mapquest.android.maps.LineOverlay;
-import com.mapquest.android.maps.MapActivity;
-import com.mapquest.android.maps.MapView;
-import com.mapquest.android.maps.Overlay;
-import com.mapquest.android.maps.OverlayItem;
-//endif android
+// Logging
+import android.util.Log;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+// Backend imports
+import com.group9.getmethere.backend.*;
 
-public class MainActivity //ifdef android
-			extends MapActivity //endif android
-					{
+import com.group9.getmethere.fragments.*;
 
-    // Logging
-    private static final String TAG = "GetMeThere";
+public class MainActivity extends ActionBarActivity
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks,
+        NewsFragment.OnBusSelectedListener
+{
+
+    // Log
+    private static final String TAG = "GetMeThere [MainActivity] ";
     //
 
-    // Activity / Mapquest related fields
-    private AssetManager assets;
-//ifdef android
-    private MapView map;
-    private AnnotationView annotation;
-    private DefaultItemizedOverlay poiOverlay;
-    private Paint paint;
-    private LineOverlay lineOverlay;
-    private List lineData;
-    private static final String LINE_OVERLAY = "LINE_OVERLAY";
-    private static final String BUS_OVERLAY  = "BUS_OVERLAY";
-    //
-
-    // Map stops related fields
-    HashMap < String, OverlayItem > stopPOI;
-    //
-//endif android
+    /**
+     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
+     */
+    private NavigationDrawerFragment mNavigationDrawerFragment;
 
 
-    //  Back-end related fields
-    private static final int SLEEP_PERIOD = 1000;   // ms
-    private tndsParse tnds = new tndsParse();
-    private String serviceName;
-    public  String serviceNames[] = { "1", "15", "28A", "35", "54", "57", "58", "65", "M1", "M2" };
-    private int selectedJourney;
-    private dataService service;
-    private dataTimeDate tD = new dataTimeDate();
-    private pointCalculate pCalc = new pointCalculate();
-    //
-    private dataPoint busPos;
-    private String busName;
-    private final int MARKER_OFFSET = 12;
-    //
-    private siriUpdate siri;
-    private Thread siriThread;
+    /**
+     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
+     */
+    private CharSequence mTitle;
+    private Fragment fragment;
+
+    // Backend-related members
+    public backendAPI bAPI;
     //
 
-//ifdef android
     @Override
-//endif android
-    public void onCreate( //ifdef android
-    			Bundle savedInstanceState //endif android
-						) {
-//ifdef android
+    protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Set the zoom level, center point and enable the default zoom controls
-        map = (MapView) findViewById(R.id.map);
-        map.getController().setZoom( 14 );
-        map.getController().setCenter( new GeoPoint( (double) 51.4833, (double) -3.1833 ) );
-        map.setBuiltInZoomControls( true );
-        // Initialise the map annotation view
-        annotation = new AnnotationView( map );
-        // Initialise the paint object (for line drawing)
-        setupPaintLines();
+        mNavigationDrawerFragment = (NavigationDrawerFragment)
+                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+        mTitle = getTitle();
 
-	// Get assets handle
-        assets = getAssets();
-//endif android
+        // Set up the drawer.
+        mNavigationDrawerFragment.setUp(
+                R.id.navigation_drawer,
+                (DrawerLayout) findViewById(R.id.drawer_layout));
 
-        // BEGIN SERVICE DATA SETUP
-        Log.i( TAG, "Done map setup. Beginning services setup." );
-        // Service & stops setup
-        serviceName = "54";
-        busName = serviceName;
-        /* Bodged addition of other services! ** FIX ME */
-        for( int i = 0; i < serviceNames.length; i++ )
-            tnds.parse( assets, serviceNames[ i ] + ".xml" );
-        // TEST ONLY
-        testTNDS();
-        /* End of bodge */
-        naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
-        Log.i( TAG, "Done setting up service. Initialising..." );
-        service = tnds.services.get( serviceName );
-        // This MUST be checked!
-        if( service == null )
-            Log.e( TAG, "ERROR: NO SERVICE FOUND (" + serviceName + ")" );
-        else {
-            // Start the SIRI-SM update class
-            siri = new siriUpdate( tnds, service );
-            siriThread = new Thread( siri );
-            // TEST ONLY
-//            siriThread.start();
+        // DJH: Set up the backend API
+        // Iain: Note that the backend is NOT ready for use until bAPI.isReady() returns
+        //  true! All data must be loaded first, this takes a while.
+        //  How about adding a busy indicator of some kind? Might make the rest of the
+        //  implementation a LOT simpler! :)
+        bAPI = new backendAPI( getAssets() );
 
-//ifdef android
-            // Plot stops on map
-            addStops();
-//endif android	    
+        // DJH: Start the update threads for all known services
+        startUpdateThreads sUT = new startUpdateThreads();
+        Thread sUTThread = new Thread( sUT );
+        sUTThread.start();
+        // Iain: Note you'll now need to call bAPI.checkAllUpdates() periodically from
+        //  within any fragment you want updated information available for. For the list
+        //  of services, for example, perhaps start a thread (see startUpdateThreads()
+        //  for an example of my version of this) which calls checkAllUpdates() every few
+        //  seconds whilst the view is active. checkAllUpdates() will update all the
+        //  information available, and then it's just a matter of updating the view
+        //  from the backend's information.
 
-            // Main loop setup
-            mainLoop mL = new mainLoop();
-            Thread mLThread = new Thread( mL );
-            Log.i( TAG, "Starting main thread..." );
-            mLThread.start();
-        }
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        fragment = LoginFragment.newInstance(0);
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
-    // TEST ONLY
-    private void testTNDS() {
-        for( int i = 0; i < serviceNames.length; i++ ) {
-            dataService s = tnds.services.get( serviceNames[ i ] );
-            // This MUST be checked!
-            if( s == null )
-                Log.e( TAG, "ERROR: NO SERVICE FOUND (" + serviceNames[ i ] + ")" );
-            else {
-                Log.i( TAG, "Service " + serviceNames[ i ] + ": from " + s.stdService.origin + " to " + s.stdService.destination );
-            }
-        }
-    }
-    // END OF TEST
-
-    private class mainLoop implements Runnable {
-
-        public void run() {
-            // MAIN LOOP //
-            while( true ) {
-                // Get the current time
-                tD.setCurrent();
-                // Select the currently active journey
-                selectedJourney = service.activeJourney( tD, tD, true );
-                // ACTIVATE BELOW CODE FOR VERBOSE LOGGING
-                Log.i( TAG, "Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Selected journey: " + selectedJourney );
-                // TEST ONLY - JOURNEY 2
-                String serviceName2 = "M1";
-                dataService service2 = tnds.services.get( serviceName2 );
-                int selectedJourney2 = service2.activeJourney( tD, tD, false );
-                Log.i( TAG, "2: Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Selected journey: " + selectedJourney2 );
-                if( selectedJourney2 != service2.NOT_FOUND ) {
-                    // TESTING OUTPUT BLOCK //
-                    String stopRefFromTest2 = service2.activeStopRefFrom( tD, tD, selectedJourney2, false );
-                    String stopRefToTest2   = service2.activeStopRefTo(   tD, tD, selectedJourney2, false );
-                    String stopNameFrom2 = tnds.stops.name( stopRefFromTest2 );
-                    String stopNameTo2   = tnds.stops.name( stopRefToTest2 );
-                    float progress2 = service2.activeLinkProgress( tD, tD, selectedJourney2, false );
-                    int progPercent2 = (int) ( progress2 * 100 );
-                    Log.i( TAG, "2: Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Service " + serviceName2 + "-" + selectedJourney2 + " | From " + stopNameFrom2 + " to " + stopNameTo2 + " | Progress " + progPercent2 + "%" );
-                    // TESTING OUTPUT BLOCK ENDS //
-
-                    // Check for service updates
-                    String stopRefTo2 = service2.activeStopRefTo( tD, tD, selectedJourney2, false );    // Change to TRUE for live!!
-                    // TEST ONLY - no update yet!
-//                    siri.update2( tD, tD, serviceName2, selectedJourney2, stopRefTo2 );
-//ifdef android		    
-//                  // CANNOT YET RUN HERE - because called pARLP() only handles one, hard-wired journey!
-//                    // Perform the UI updates
-//                    runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            plotAllRouteLinkProgress( tD, selectedJourney );
-//                        }
-//                    });
-//endif android		    
-                }
-                // TEST ONLY - no update yet!
-//                else
-//                    // If we don't have a journey, turn off the update system
-//                    siri.suspend();
-//
-//                }
-                // END TEST - JOURNEY 2
-
-                // If we have one, check the NextBuses system, and plot it on the map
-                if( selectedJourney != service.NOT_FOUND ) {
-
-                    // TESTING OUTPUT BLOCK //
-                    String stopRefFromTest = service.activeStopRefFrom( tD, tD, selectedJourney, true );
-                    String stopRefToTest   = service.activeStopRefTo(   tD, tD, selectedJourney, true );
-                    String stopNameFrom = tnds.stops.name( stopRefFromTest );
-                    String stopNameTo   = tnds.stops.name( stopRefToTest );
-                    float progress = service.activeLinkProgress( tD, tD, selectedJourney, true );
-                    int progPercent = (int) ( progress * 100 );
-                    Log.i( TAG, "Time " + tD.hour() + ":" + tD.minute() + ":" + tD.second() + " | Service " + serviceName + "-" + selectedJourney + " | From " + stopNameFrom + " to " + stopNameTo + " | Progress " + progPercent + "%" );
-                    // TESTING OUTPUT BLOCK ENDS //
-
-                    // Check for service updates
-                    String stopRefTo = service.activeStopRefTo( tD, tD, selectedJourney, true );
-                    siri.update( tD, tD, serviceName, selectedJourney, stopRefTo );
-//ifdef android		    
-                    // Perform the UI updates
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            plotAllRouteLinkProgress( tD, selectedJourney );
-                        }
-                    });
-//endif android		    
-                }
-                else
-                    // If we don't have a journey, turn off the update system
-                    siri.suspend();
-
-                try {
-                    Thread.currentThread().sleep( SLEEP_PERIOD );
-                }
-                catch( InterruptedException e ) {
-                    Log.e( TAG, "ERROR: [MAIN LOOP]: Interrupted exception " + e );
-                }
-            }
-        }
-    }
-
-//ifdef android
-    // Plot stops on the map as POIs
-    private void addStops() {
-        boolean viewSet = false;
-        // Allocate the hashmap
-        stopPOI = new HashMap < String, OverlayItem >();
-
-        // Create the itemized overlay
-        try {
-            Drawable icon = Drawable.createFromStream( assets.open( "location_marker.png" ), null);
-            poiOverlay = new DefaultItemizedOverlay(icon);
-
-            // Step through each known stop
-            Iterator stopKeys = tnds.stops.keySet().iterator();
-            while( stopKeys.hasNext() ) {
-                String id = stopKeys.next().toString();
-                dataStop stop = tnds.stops.get( id );
-                stopPOI.put( id, new OverlayItem( new GeoPoint( stop.getLat(), stop.getLon() ), stop.stopName, serviceName ) );
-                poiOverlay.addItem( stopPOI.get( id ) );
-                // Centre the map on the first stop
-                if( !viewSet ) {
-                    map.getController().setCenter( new GeoPoint( stop.getLat(), stop.getLon() ) );
-                    viewSet = true;
-                }
-            }
-
-            // Set an interaction handler
-            poiOverlay.setTapListener( new tapListener() );
-            // Activate the overlay
-            map.getOverlays().add(poiOverlay);
-        }
-        catch( IOException e ) {
-            Log.e( TAG, "IOException (in MainActivity [addStops()]): " + e );
-        }
-    }
-    
-    // POI Interaction handler
-    public class tapListener implements ItemizedOverlay.OverlayTapListener {
-
-        @Override
-        public void onTap( GeoPoint pt, MapView mapView ) {
-            // when tapped, show the annotation for the overlayItem
-            int lastTouchedIndex = poiOverlay.getLastFocusedIndex();
-            if (lastTouchedIndex > -1) {
-                OverlayItem tapped = poiOverlay.getItem(lastTouchedIndex);
-                annotation.showAnnotationView(tapped);
-            }
-        }
-    }
-//endif android
-
-    // Plot progress of all route links
-    private void plotAllRouteLinkProgress( dataTimeDate tD, int chosenJourney ) {
-        boolean success = true, initial = true;
-        int linkNo = 1;
-
-        do {
-            // Get the nth patternLink
-            dataPatternLink dPL = service.patternLink( chosenJourney, linkNo );
-            // If we have one
-            if( dPL != null ) {
-                // Clear the layer, if this is our first plot
-                if( initial ) {
-//ifdef android		
-                    // Remove the old layer (NECESSARY??)
-                    map.removeOverlayByKey( LINE_OVERLAY );
-                    // Reset it
-                    resetLines();
-//endif android		    
-                    initial = false;
-                }
-                success = plotRouteLinkProgress( tD, chosenJourney, dPL.getFrom(), dPL.getTo() );
-                linkNo ++;
-            }
-            // Otherwise, signal end of loop
-            else {
-                success = false;
-                initial = true;
-            }
-        } while( success == true );
-
-//ifdef android
-        // Render the lines (and bus), if anything happened
-        if( !initial ) {
-            renderLines();
-            plotBus();
-        }
-//endif android	
-    }
-
-    // Plot progress of a single route link
-    //  Returns false if no progress was plotted
-    private boolean plotRouteLinkProgress( dataTimeDate tD, int chosenJourney, String stopFrom, String stopTo ) {
-        // Find the progress between the two stops at time <time> for <chosenJourney>
-        //  (using live times here, assuming map is to display all live data)
-        double progress = service.linkProgress( tD, tD, chosenJourney, stopFrom, stopTo, true );
-
-        // Only plot if we have some progress to show
-        if( progress > 0f ) {
-            // Set the two points from the given stopRefs
-            dataPoint from = new dataPoint( tnds.stops.get( stopFrom ).getLat(),
-                                            tnds.stops.get( stopFrom ).getLon() );
-            dataPoint to   = new dataPoint( tnds.stops.get( stopTo   ).getLat(),
-                                            tnds.stops.get( stopTo   ).getLon() );
-            // Get the progress-based line end point
-            dataPoint toProgress = pCalc.calcPoint( from, to, progress );
-
-//ifdef android
-            // Plot the line
-            addLine(from, toProgress);
-//endif android	    
-
-//            // Plot the bus
-              busPos = toProgress;
-
-            // We made a successful plot
-            return true;
-        }
-
-        // No plot was made
-        return false;
-    }
-
-//ifdef android
-    // Setup paint object and line overlay
-    private void setupPaintLines() {
-        // Set custom line style
-        paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setColor(Color.GREEN);
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(3);
-        // Line overlay initial setup
-        resetLines();
-    }
-
-    private void resetLines() {
-        // (Re)set line overlay
-        lineOverlay = new LineOverlay( paint );
-        lineOverlay.setKey( LINE_OVERLAY );
-        // And line data list
-        lineData = new ArrayList();
-    }
-
-    public void plotLines( dataLines dLs ) {
-        Iterator lines = dLs.keySet().iterator();
-
-        while( lines.hasNext() ) {
-            addLine((dataLine) lines.next());
-        }
-    }
-
-    // Plot the bus marker on a map
-    public void plotBus() {
-        try {
-            Drawable icon = Drawable.createFromStream( assets.open( "bus_marker.png" ), null );
-            DefaultItemizedOverlay busOverlay = new DefaultItemizedOverlay( icon );
-            busOverlay.setKey( BUS_OVERLAY );
-            busOverlay.addItem( new OverlayItem( new GeoPoint( busPos.lat, busPos.lon ), busName, null ) );
-            // Centre the map on the bus marker
-            map.getController().setCenter( new GeoPoint( busPos.lat, busPos.lon ) );
-
-            // Activate the overlay
-            map.getOverlays().add( busOverlay );
-        }
-        catch( IOException e ) {
-            Log.e( TAG, "IOException (in MainActivity [plotBus()]): " + e );
-        }
-    }
-
-    // Plot a line on a map (using a dataLine )
-    public void addLine( dataLine dL ) {
-        addLine(dL.from, dL.to);
-    }
-
-    // Plot a line on the map (using two dataPoints )
-    public void addLine( dataPoint from, dataPoint to ) {
-        // Add the points to the current lineData list
-        lineData.add( new GeoPoint( from.lat, from.lon ) );
-        lineData.add( new GeoPoint( to.lat,   to.lon   ) );
-    }
-
-    // return false since no route is being displayed
     @Override
-    public boolean isRouteDisplayed() {
-        return false;
+    public void onNavigationDrawerItemSelected(int position) {
+        // update the main content by replacing fragments
+        switch (position){
+            case 0:
+                fragment = NewsFragment.newInstance(position + 1);
+                break;
+            case 1:
+                fragment = TicketFragment.newInstance(position + 1);
+                break;
+            case 2:
+                fragment = MyTicketFragment.newInstance(position + 1);
+                break;
+            case 3:
+                fragment = FavouriteFragment.newInstance(position + 1);
+                break;
+            case 4:
+                fragment = SettingsFragment.newInstance(position + 1);
+                break;
+            case 5:
+                fragment = LoginFragment.newInstance(position + 1);
+                break;
+        }
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
-    public void renderLines() {
-        // Set lineData for the overlay
-        lineOverlay.setData( lineData );
-        // Plot the overlay on the map
-        map.getOverlays().add( lineOverlay );
+    public void onSectionAttached(int number) {
+        switch (number) {
+            case 1:
+                mTitle = getString(R.string.title_section1);
+                break;
+            case 2:
+                mTitle = getString(R.string.title_section2);
+                break;
+            case 3:
+                mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
+                break;
+            case 6:
+                mTitle = getString(R.string.title_section6);
+                break;
+        }
     }
-//endif android
 
-/*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
+    public void restoreActionBar() {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle(mTitle);
     }
 
+    public void onBusSelected(int position){
+        Fragment newFragment = BusFragment.newInstance(6);
+        Bundle args = new Bundle();
+        args.putInt("busID", position);
+        newFragment.setArguments(args);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, newFragment);
+        transaction.addToBackStack(null);
+
+        transaction.commit();
+    }
+    public void onBusSelected(String busName){
+        Fragment newFragment = BusFragment.newInstance(6);
+        Bundle args = new Bundle();
+
+        //TODO: need logic to go through the busses and find the position that corrisponds to this busName
+        //DJH: No you don't! :) Simply modify the call within NewsFragment->eventHandle() to provide the ID of
+        // the item that's been selected - that gives you your position (I think it's either i or l, or it can
+        // be gained from View method calls)
+        int position = 0; //using as default for now
+
+        args.putInt("busID", position);
+        newFragment.setArguments(args);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, newFragment);
+        transaction.addToBackStack(null);
+
+        transaction.commit();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+            // Only show items in the action bar relevant to this screen
+            // if the drawer is not showing. Otherwise, let the drawer
+            // decide what to show in the action bar.
+            getMenuInflater().inflate(R.menu.main, menu);
+            restoreActionBar();
+            return true;
+        }
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -471,6 +202,40 @@ public class MainActivity //ifdef android
 
         return super.onOptionsItemSelected(item);
     }
-*/
 
+    /* Backend-related methods */
+    // Return a handle to the backendAPI
+    public backendAPI backEnd() {
+    	return bAPI;
+    }
+
+    // Keep checking until the backend is ready, then start all the update threads
+    public class startUpdateThreads implements Runnable {
+
+        private boolean running = false;
+
+        public void run() {
+          while( !running ) {
+            Log.i( TAG, "[startUpdateThreads] Running" );
+
+            if( bAPI != null )
+              if( bAPI.isReady() ) {
+                Log.i( TAG, "[startUpdateThreads] Backend ready - starting update threads..." );
+
+                bAPI.startUpdates();
+                running = true;
+
+                Log.i( TAG, "[startUpdateThreads] Done!" );
+              }
+
+            try {
+              Thread.currentThread().sleep( 20000 );   // THIS CONTROLS THE CHECK FREQUENCY
+            }
+            catch( InterruptedException e ) {
+              Log.e( TAG, "[startUpdateThreads] Interrupted Exception " + e );
+            }
+          }
+        }
+    }
+    /* End of backend-related methods */
 }
