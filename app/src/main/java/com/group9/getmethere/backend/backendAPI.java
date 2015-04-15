@@ -16,7 +16,7 @@ import android.os.AsyncTask;
 public class backendAPI {
 
     // Debug
-    private static boolean DEBUG = true;
+    private static boolean DEBUG = false;
     //
 
     // Logging
@@ -44,7 +44,7 @@ public class backendAPI {
         }
     }
 
-    String serviceNames[] = { "54", "10" };// "1", "15", "28A", "35", "54", "57", "58", "65", "M1", "M2" };
+    String serviceNames[] = { "10", "27", "54", "61" };
 
     private AssetManager assets;
     private tndsParse tnds = new tndsParse();

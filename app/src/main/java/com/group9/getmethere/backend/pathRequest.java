@@ -140,7 +140,7 @@ if( DEBUG )
             }
             else {
               // Note the error, and add a dummy line to the link section (no progress better than random progress?)
-              Log.e( TAG, "[matchToJourney] WARNING: NO ROUTE MATCH FOR JOURNEY " + journey + ", LINK " + l + "!" );
+              Log.e( TAG, "[matchToJourney] WARNING: NO MATCH FOR JOURNEY " + journey + ", LINK " + l + "! (" + tnds.stops.get( dPL.stopRefTo ).location.lat + ", " + tnds.stops.get( dPL.stopRefTo ).location.lon + ")" );
               setPolyLine( dPL, pL, tnds.stops.get( dPL.stopRefFrom ).location, tnds.stops.get( dPL.stopRefTo ).location, lineIndexPrev, lineIndexPrev, forwards );
             }
         }
