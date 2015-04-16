@@ -42,6 +42,7 @@ public class NewsFragment extends Fragment {
 
     // Backend-related members
     private backendAPI bAPI = null;
+    updateLoop uL = null;
     //
 
     // ListView related members - moved here for global availability (temporarily)
@@ -84,7 +85,7 @@ public class NewsFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_news, container, false);
 
         // Backend related - start a thread to handle updating of the ListView
-        updateLoop uL = new updateLoop();
+        uL = new updateLoop();
         updateThread = new Thread( uL );
         updateThread.start();
         //
@@ -112,7 +113,17 @@ public class NewsFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
 
-        updateThread.destroy();
+        // updateLoop kill code
+        // Iain: does the updateLoop need to be instantiated in onAttach? Or is onCreate
+        //  the right place for it? I'm unsure :)
+        Log.i( TAG, "[onDetach] Trying to kill updateLoop..." );
+        if( uL != null ) {
+          uL.kill();
+          Log.i( TAG, "[onDetach] Success." );
+        }
+        else
+          Log.e( TAG, "[onDetach] ERROR: Attempted to kill non-existent updateLoop!" );
+        //
 
         mListener = null;
     }
@@ -150,8 +161,14 @@ public class NewsFragment extends Fragment {
     // Listview updating code - run as thread from within populateBuses()
     public class updateLoop implements Runnable {
 
+        private volatile boolean active = true;
+
+        public void kill() {
+          active = false;
+        }
+
         public void run() {
-          while( true ) {
+          while( active ) {
             Log.i( TAG, "[updateLoop] Running" );
 
             if( bAPI != null )
