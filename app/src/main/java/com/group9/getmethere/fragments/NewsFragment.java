@@ -50,6 +50,8 @@ public class NewsFragment extends Fragment {
     public ArrayList <String> busNames = new ArrayList <String> ();
     public ArrayList <String> busTos   = new ArrayList <String> ();
     public ArrayList <String> busFroms = new ArrayList <String> ();
+    private View rootView = null;
+    private Thread updateThread = null;
     //
 
     public static NewsFragment newInstance(int sectionNumber) {
@@ -79,7 +81,13 @@ public class NewsFragment extends Fragment {
       	bAPI = ((MainActivity)this.getActivity()).backEnd();
         //
 
-        View rootView = inflater.inflate(R.layout.fragment_news, container, false);
+        rootView = inflater.inflate(R.layout.fragment_news, container, false);
+
+        // Backend related - start a thread to handle updating of the ListView
+        updateLoop uL = new updateLoop();
+        updateThread = new Thread( uL );
+        updateThread.start();
+        //
 
         populateBuses(rootView);
         eventHandle(rootView);
@@ -103,6 +111,9 @@ public class NewsFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
+
+        updateThread.destroy();
+
         mListener = null;
     }
 
@@ -131,12 +142,10 @@ public class NewsFragment extends Fragment {
         // Tells the ListView what data to use
         NewsListView.setAdapter(recAdapter);
 
-        // Backend related - start a thread to handle updating of the ListView
-        updateLoop uL = new updateLoop();
-        Thread updateThread = new Thread( uL );
-        updateThread.start();
-        //
     }
+
+
+
 
     // Listview updating code - run as thread from within populateBuses()
     public class updateLoop implements Runnable {
@@ -165,9 +174,15 @@ public class NewsFragment extends Fragment {
 //                    Log.i( TAG, "[updateLoop] Debug: Adding service " + busNames.get( i ) );
                 }
 
-                // Iain: if you could get this code to call NewsListView.invalidate() (or
-                //  whatever's needed to update the ListView) this'll update automatically
-                //  for you
+                  getActivity().runOnUiThread(new Runnable() {
+                      @Override
+                      public void run() {
+
+                          populateBuses(rootView);
+
+                      }
+                  });
+
 
                 Log.i( TAG, "[updateLoop] Done!" );
               }
