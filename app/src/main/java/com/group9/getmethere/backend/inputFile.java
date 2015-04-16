@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class inputFile {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [inputFile] ";
         //
 
 	// Defines
@@ -45,7 +45,7 @@ public class inputFile {
 			closed = false;
 		}
 		catch( IOException e ) {
-		        Log.e( TAG, "IOException (in inputFile [constructor]): " + e );
+		        Log.e( TAG, "[open] IOException: " + e );
 		}
 	}
 
@@ -61,7 +61,7 @@ public class inputFile {
 			reader.close();
 		}
 		catch( IOException e ) {
-		        Log.e( TAG, "IOException (in inputFile [close()]): " + e );
+		        Log.e( TAG, "[close] IOException: " + e );
 		}
 		closed = true;
 	}

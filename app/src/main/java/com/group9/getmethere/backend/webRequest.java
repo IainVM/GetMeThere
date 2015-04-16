@@ -17,14 +17,12 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
-
-// Testing
 import java.io.OutputStream;
 
 public class webRequest {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [webRequest] ";
         //
 
         // Debug
@@ -49,31 +47,40 @@ public class webRequest {
 	private byte [] postData;
 	private BufferedReader inputData;
 	private String auth;
+        boolean useAuth;
 
-	public webRequest( String url, String username, String password ) {
-		try {
+	public webRequest( String url ) {
+                try {
 if( DEBUG )
-			Log.i( TAG, "[webRequest] URL: " + url );
-			server = new URL( url );
-			String authString = username + authSep + password;
-			//ifdef android
-			auth = authStart + Base64.encodeToString( authString.getBytes( encoding ), Base64.DEFAULT );
-			//endif android
-			/*ifdef pc
-			auth = authStart + Base64.encodeBytes( authString.getBytes( encoding ) );
-			endif pc*/
-if( DEBUG )
-			Log.i( TAG, "[webRequest] Auth: " + authKey + " = " + auth );
-		}
-		catch( MalformedURLException e ) {
-			Log.e( TAG, "MalformedURLException: (in webRequest [constructor()] ): " + e );
-		}
-		catch( UnsupportedEncodingException e ) {
-			Log.e( TAG, "UnsupportedEncodingException: (in webRequest [constructor()] ): " + e );
+        	    	Log.i( TAG, "[constructor] URL: " + url );
+        		server = new URL( url );
+                }
+        	catch( MalformedURLException e ) {
+			Log.e( TAG, "[constructor] MalformedURLException: " + e );
 		}
 
+                useAuth = false;
 		inputData = null;
 	}
+
+        // Set authorisation details, if required
+        public void setAuth( String username, String password ) {
+                try {
+            	    String authString = username + authSep + password;
+    	            //ifdef android
+		    auth = authStart + Base64.encodeToString( authString.getBytes( encoding ), Base64.DEFAULT );
+            	    //endif android
+	            /*ifdef pc
+		    auth = authStart + Base64.encodeBytes( authString.getBytes( encoding ) );
+        	    endif pc*/
+                    useAuth = true;
+                    if( DEBUG )
+                        Log.i( TAG, "[setAuth] Auth: " + authKey + " = " + auth );
+                }
+    		catch( UnsupportedEncodingException e ) {
+			Log.e( TAG, "[setAuth] UnsupportedEncodingException: " + e );
+                }
+        }
 
 	// Null return value means NO data was returned!
 	public BufferedReader send( String data ) {
@@ -82,7 +89,7 @@ if( DEBUG )
 			postData = data.getBytes( encoding );
 		}
 		catch( UnsupportedEncodingException e ) {
-			Log.e( TAG, "UnsupportedEncodingException: (in webRequest [send()] ): " + e );
+			Log.e( TAG, "[send] UnsupportedEncodingException: " + e );
 			// Try again!
 			postData = data.getBytes();
 		}
@@ -95,13 +102,18 @@ if( DEBUG )
 
 				socket = (HttpURLConnection) server.openConnection();
 				socket.setRequestMethod( method );
-				socket.setRequestProperty( authKey, auth );
+                                // Do we need to send authorisation details?
+                                if( useAuth ) {
+				    socket.setRequestProperty( authKey, auth );
+if( DEBUG )                                    
+                                    Log.i( TAG, "[send] DEBUG: Using auth " + authKey + " " + auth );
+                                }
                                 socket.setRequestProperty( typeKey, typeValue );
 				socket.setRequestProperty( lengthKey, String.valueOf( postData.length ) );
-                                socket.setRequestProperty( "Connection", "close" );
+//                                socket.setRequestProperty( "Connection", "close" );
 				socket.setDoOutput( true );
 if( DEBUG )
-				Log.i( TAG, "[webRequest] Sending: " + new String( postData ) );
+				Log.i( TAG, "[send] Sending: " + new String( postData ) );
 				socket.getOutputStream().write( postData );
 
 				// Did we get an OK?
@@ -111,10 +123,10 @@ if( DEBUG )
 					return inputData;
 				}
 				else
-					Log.e( TAG, "ERROR: webRequest: [send()]: Got code " + socket.getResponseCode() );
+					Log.e( TAG, "[send] ERROR: Got code " + socket.getResponseCode() );
 			}
 			catch( IOException e ) {
-			        Log.e( TAG, "IO/Protocol/UnsupportedEncoding Exception (in webRequest [send()] ): " + e );
+			        Log.e( TAG, "[send] IO/Protocol/UnsupportedEncoding Exception: " + e );
 			}
 		}
 

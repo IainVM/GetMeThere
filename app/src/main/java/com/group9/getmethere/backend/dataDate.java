@@ -5,7 +5,7 @@ import android.util.Log;
 public class dataDate {
 
     // Logging
-    private static final String TAG = "GetMeThere";
+    private static final String TAG = "GetMeThere [dataDate] ";
     //
 
 	public int day, month, year;
@@ -41,7 +41,7 @@ public class dataDate {
 		}
 		// If we have the wrong number of elements, display an error
 		else
-			Log.e( TAG, "ERROR: dataTimeDate: given Date of incorrect format (" + date + ")" );
+			Log.e( TAG, "[setDate] ERROR: given Date of incorrect format (" + date + ")" );
 
 		// If we dropped through, there was an error
 		return false;

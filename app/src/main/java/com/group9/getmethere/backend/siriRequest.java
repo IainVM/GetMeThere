@@ -11,7 +11,7 @@ public class siriRequest {
         //
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [siriRequest] ";
         //
 
 	// Defines
@@ -59,8 +59,9 @@ public class siriRequest {
 		stopRef = sR;
 		reqNo = 0;
 		tD = new dataTimeDate();
-		request = new webRequest( urlStart + username + urlSeparator + password + urlAt + urlEnd, username, password );
-
+//		request = new webRequest( urlStart + username + urlSeparator + password + urlAt + urlEnd, username, password );
+		request = new webRequest( urlStart + username + urlSeparator + password + urlAt + urlEnd );
+                request.setAuth( username, password );
 	}
 
 	// Not necessary to call this externally, if timeout() check remains in send()
@@ -89,23 +90,23 @@ public class siriRequest {
 
 
 if( DEBUG )
-			Log.i( TAG, "[siriRequest] * Live fetch for stopRef " + stopRef + " *" );
+			Log.i( TAG, "[send] * Live fetch for stopRef " + stopRef + " *" );
 			inputData = request.send( requestStr );
 			if( inputData != null ) {
 				// Only mark the request time if request was successful
 				requestLast = tD.time();
 if( DEBUG )
-				Log.i( TAG, "[siriRequest] Data was returned by NextBuses." );
+				Log.i( TAG, "[send] Data was returned by NextBuses." );
 				return true;
 			}
 			else
 				// Debug showing NO data was returned!
-				Log.e( TAG, "ERROR: [siriRequest] *NO* data returned by NextBuses!!" );
+				Log.e( TAG, "[send] ERROR: *NO* data returned by NextBuses!!" );
 		}
 		else
 			// Debug showing timeout not yet active
 if( DEBUG )
-			Log.i( TAG, "[siriRequest] ...No request (timeout not yet occurred)." );
+			Log.i( TAG, "[send] ...No request (timeout not yet occurred)." );
 
 		// If we're here, method failed or timeout hasn't yet occurred
 		return false;

@@ -6,7 +6,7 @@ import android.util.Log;
 public class tndsServiceParse {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [tndsServiceParse] ";
         //
 
 	// Testing
@@ -41,7 +41,7 @@ public class tndsServiceParse {
 		// If we have a TransXChange file, extract data from it
 		if( parser.find( xmlTag, xmlTag, false ) ) {
 if( DEBUG == true )
-			Log.i( TAG, "Parsing for service data..." );
+			Log.i( TAG, "[constructor] Parsing for service data..." );
 			getService();
 			parser.reset();
 
@@ -72,7 +72,7 @@ if( DEBUG == true )
 						CommonName   = parser.get( section, "CommonName", true );
 						dataStop stop = new dataStop( CommonName, service.lineName );
 if( DEBUG == true )
-						Log.i( TAG, "Adding stop " + StopPointRef );
+						Log.i( TAG, "[getStops] Adding stop " + StopPointRef );
 						stops.put( StopPointRef, stop );
 					}
 				}
@@ -85,7 +85,7 @@ if( DEBUG == true )
 			}
 		}
 		if( SHOW_DATA )	/* TESTING */
-			Log.i( TAG, "\nStops: " + stops );
+			Log.i( TAG, "\n[getStops] Stops: " + stops );
 	}
 
 	private void getRouteSects() {
@@ -122,7 +122,7 @@ if( DEBUG == true )
 						// Store data
 						routeSect.add( routeLinkID, routeLink );
 if( DEBUG == true )
-						Log.i( TAG, "Adding routeSect " + routeLinkID );
+						Log.i( TAG, "[getRouteSects] Adding routeSect " + routeLinkID );
 					}
 					// Otherwise, end the section
 					else
@@ -132,14 +132,14 @@ if( DEBUG == true )
 						endSection = parser.endOfFile();
 				}
 				if( SHOW_DATA ) /* TESTING */
-					Log.i( TAG, "\nRouteSect: " + routeSect.routeLinks );
+					Log.i( TAG, "\n[getRouteSects] RouteSect: " + routeSect.routeLinks );
 
 				// Store the routeSect data
 				routeSects.add( routeSectID, routeSect );
 			}
 		}
 		if( SHOW_DATA ) /* TESTING */
-			Log.i( TAG, "\nRouteSects: " + routeSects.routeSects );
+			Log.i( TAG, "\n[getRouteSects] RouteSects: " + routeSects.routeSects );
 	}
 
 	// This code is (was!) almost identical to getRouteSects() - abstract?
@@ -185,9 +185,9 @@ if( DEBUG == true )
 							patternLink.setRunTime(    parser.get( subSubSection, "RunTime", true ) );
 
 							// Store data
-							patternSect.add( patternLinkID, patternLink );
 if( DEBUG == true )
-							Log.i( TAG, "Adding PatternSect " + patternLinkID );
+							Log.i( TAG, "[getPatternSects] Adding PatternSect " + patternLinkID );
+							patternSect.add( patternLinkID, patternLink );
 						}
 						// Otherwise, end the section
 						else
@@ -211,7 +211,7 @@ if( DEBUG == true )
 			}
 		}
 		if( SHOW_DATA ) /* TESTING */
-			Log.i( TAG, "\nPatternSects: " + patternSects.patternSects );
+			Log.i( TAG, "\n[getPatternSects] PatternSects: " + patternSects.patternSects );
 	}
 
 	private void getService() {
@@ -220,7 +220,7 @@ if( DEBUG == true )
 
 		if( parser.find( xmlTag, section, true ) ) {
 if( DEBUG == true )
-			Log.i( TAG, "Found SERVICES." );
+			Log.i( TAG, "[getService] Found SERVICES." );
 			// We've found the Services tag - data follows
 
 			// Look for the Line Name
@@ -233,7 +233,7 @@ if( DEBUG == true )
 				getStandardService( subSection, service );
 		}
 		if( SHOW_DATA ) /* TESTING */
-			Log.i( TAG, "\nService: " + service.lineName );
+			Log.i( TAG, "\n[getService] Service: " + service.lineName );
 	}
 
 	private void getStandardService( String section, dataService service ) {
@@ -255,7 +255,7 @@ if( DEBUG == true )
 				destinationDisplay = parser.get( subSection, "DestinationDisplay", true );
 				direction = parser.get( subSection, "Direction", true );
 if( DEBUG == true )
-				Log.i( TAG, "Adding standard service " + id );
+				Log.i( TAG, "[getStandardService] Adding standard service " + id );
 				service.stdService.add( id, destinationDisplay, direction );
 			}
 			else
@@ -266,8 +266,8 @@ if( DEBUG == true )
 				endSection = parser.endOfFile();
 		}
 		if( SHOW_DATA ) { /* TESTING */
-			Log.i( TAG, "\nstdService: " + service.stdService.origin );
-			Log.i( TAG, "\nPattern: " + service.stdService.journeyPatterns );
+			Log.i( TAG, "\n[getStandardService] stdService: " + service.stdService.origin );
+			Log.i( TAG, "\n[getStandardService] Pattern: " + service.stdService.journeyPatterns );
 		}
 	}
 
@@ -320,10 +320,10 @@ if( DEBUG == true )
 					// Add this journey to the list
 					journeys.add( dT.calcTime(), journey );	
 if( DEBUG == true )
-					Log.i( TAG, "Adding journey " + dT.calcTime() );
+					Log.i( TAG, "[getJourneys] Adding journey " + dT.calcTime() );
 
 					if( SHOW_DATA ) /* TESTING */
-						Log.i( TAG, "Journey: " + journey.journeyPatternRef );
+						Log.i( TAG, "[getJourneys] Journey: " + journey.journeyPatternRef );
 
 					endSection = parser.endOfFile();
 //					}
@@ -337,6 +337,6 @@ if( DEBUG == true )
 			}
 		}
 		if( SHOW_DATA ) /* TESTING */		
-			Log.i( TAG, "Journeys: " + journeys.journeys.keySet() );
+			Log.i( TAG, "[getJourneys] Journeys: " + journeys.journeys.keySet() );
 	}
 }

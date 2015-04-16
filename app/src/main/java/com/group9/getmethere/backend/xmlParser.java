@@ -9,7 +9,7 @@ import java.io.IOException;
 public class xmlParser {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [xmlParser] ";
         //
 
 	// Debug
@@ -51,7 +51,7 @@ public class xmlParser {
 			inputData.reset();
 		}
 		catch( IOException e ) {
-		        Log.e( TAG, "IOException (in xmlParser [reset()]): " + e );
+		        Log.e( TAG, "[reset] IOException (in xmlParser [reset()]): " + e );
 		}
 	}
 
@@ -89,7 +89,7 @@ public class xmlParser {
 					done = true;
 			}
 			catch( IOException e ) {
-				Log.e( TAG, "IOException (in xmlParser [readLine()]): " + e );
+				Log.e( TAG, "[readLine] IOException: " + e );
 			}
 
 		} while( done == false );
@@ -109,10 +109,10 @@ public class xmlParser {
 
 		while( !eof ) {
 			if( DEBUG )
-				Log.i( TAG, "[xmlParser] about to readLine().." );
+				Log.i( TAG, "[getRaw] about to readLine().." );
 			input = readLine( tag );
 			if( DEBUG )
-				Log.i( TAG, "[xmlParser] >: " + input );
+				Log.i( TAG, "[getRaw] >: " + input );
 
                         if( input == null )
 				eof = true;
@@ -166,7 +166,7 @@ public class xmlParser {
 		}
 		catch( IOException e ) {
 			eof = true;
-			Log.e( TAG, "IOException (in xmlParser [getTag()]): " + e );
+			Log.e( TAG, "[getTag] IOException: " + e );
 		}
 
 		return null;

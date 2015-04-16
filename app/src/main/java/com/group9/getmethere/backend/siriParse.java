@@ -13,12 +13,12 @@ public class siriParse {
         //
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [siriParse] ";
         //
 
         // Defines
         public final static String siriTag 	        = "ServiceDelivery";
-        public final static int ERROR 		= Integer.MAX_VALUE;
+        public final static double ERROR 		= Double.MAX_VALUE;
         public final static int AIMEDTIME_TOLERANCE = 300;  // +/- tolerance for Aimed stop time, in seconds
         //
 	
@@ -48,36 +48,37 @@ public class siriParse {
 				// We've found a MonitoredStopVisit section - data follows
 				dataSiriStopTime siriStopTime = new dataSiriStopTime();
 
-				siriStopTime.monitoringRef     = parser.get( section, "MonitoringRef", true );
-				String publishedLineName = parser.get( section, "PublishedLineName", true );
+				siriStopTime.monitoringRef    = parser.get( section, "MonitoringRef", true );
+				String publishedLineName      = parser.get( section, "PublishedLineName", true );
+                                siriStopTime.directionName    = parser.get( section, "DirectionName", true );
                                 if( publishedLineName != null ) {
 if( DEBUG )
-        				Log.i( TAG, "[siriParse] Got name match for service " + publishedLineName );
+        				Log.i( TAG, "[getStops] Got name match for service " + publishedLineName );
 				
         				// Look for MonitoredCall section
 	        			String subSection = "MonitoredCall";
         				if( parser.find( section, subSection, true ) ) {
 	        				// We've found a MonitoredCall section - data follows
 if( DEBUG )
-		        			Log.i( TAG, "[siriParse] Seeking AimedDepartureTime..." );
+		        			Log.i( TAG, "[getStops] Seeking AimedDepartureTime..." );
         					String aimed = parser.get( subSection, "AimedDepartureTime", true );
         					if( aimed != null ) {
                                                     siriStopTime.setAimed(aimed);
 if( DEBUG )
-                                                    Log.i( TAG, "[siriParse] Got AIMED: " + aimed );
+                                                    Log.i( TAG, "[getStops] Got AIMED: " + aimed );
                                                 }
 		        			String expected = parser.get( subSection, "ExpectedDepartureTime", true );
 				        	// Do we have an expected time to store?
         					if( expected != null ) {
 	        					siriStopTime.setExpected( expected );
 if( DEBUG )
-                                                        Log.i( TAG, "[siriParse] Got EXPECTED: " + expected );
+                                                        Log.i( TAG, "[getStops] Got EXPECTED: " + expected );
         					}
 
 	        				// Extract a key from the aimed time
 		        			String timeKey = siriStopTime.aimedDepartureTD.getShortTimeStamp();
 if( DEBUG )
-			        		Log.i( TAG, "[siriParse] Storing under " + timeKey );
+			        		Log.i( TAG, "[getStops] Storing under " + timeKey );
 				        	dataSiriStop siriStop = siriStops.get( publishedLineName );
         					// STORE SST inside SS[ timeKey, SST ], then SS inside stops[ servName, SS ]
 					
@@ -105,7 +106,7 @@ if( DEBUG )
 		}
 	}
 
-        public dataSiriStopTime getStopTimeNear( String serviceName, dataTimeDate tD ) {
+        public dataSiriStopTime getStopTimeNear( String serviceName, String destinationDisplay, dataTimeDate tD ) {
                 // Get the stop objects map for this service
                 dataSiriStop siriStop = siriStops.get( serviceName );
 
@@ -116,23 +117,33 @@ if( DEBUG )
 
                     while( serviceStops.hasNext() ) {
                         dataSiriStopTime dSST = siriStop.stopTimes.get( serviceStops.next() );
-                        dataTimeDate tDAimed = dSST.getAimed();
-                        if( tDAimed == null ) {
 if( DEBUG )                        
-                            Log.e( TAG, "[siriParse] ERROR: Aimed dTD is NULL" );
-                        }
-                        else {
-                            if( tDAimed.isWithin( tD, AIMEDTIME_TOLERANCE ) ) {
+                        Log.i( TAG, "[getStopTimeNear] Checking received direction '" + dSST.directionName + "' against service direction '" + destinationDisplay + "' = " + directionMatch( dSST.directionName, destinationDisplay ) );
+                        if( directionMatch( dSST.directionName, destinationDisplay ) ) {
+                          dataTimeDate tDAimed = dSST.getAimed();
+                          if( tDAimed == null ) {
+if( DEBUG )                        
+                              Log.e( TAG, "[getStopTimeNear] ERROR: Aimed dTD is NULL" );
+                          }
+                          else {
+                              if( tDAimed.isWithin( tD, AIMEDTIME_TOLERANCE ) ) {
 if( DEBUG )
-                                Log.i( TAG, "[siriParse] Match found: retrieved " + tDAimed.getTimeStamp() + " ~ scheduled " + tD.getTimeStamp() );
-                                return dSST;
-                            }                        
+                                  Log.i( TAG, "[getStopTimeNear] Match found: retrieved " + tDAimed.getTimeStamp() + " ~ scheduled " + tD.getTimeStamp() );
+                                  return dSST;
+                              }                        
+                          }
                         }
                     }
                 }
 
                 // Otherwise, return null
                 return null;
+        }
+
+        private boolean directionMatch( String a, String b ) {
+            if( a.startsWith( b ) || b.startsWith( a ) )
+                return true;
+            return false;
         }
 
 	public dataSiriStopTime getStopTime( String serviceName, String shortTimeStamp ) {

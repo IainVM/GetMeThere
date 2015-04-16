@@ -2,6 +2,7 @@ package com.group9.getmethere.backend;
 
 import android.util.Log;
 
+import java.util.Set;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class dataService {
     //
 
     // Logging
-    private static final String TAG = "GetMeThere";
+    private static final String TAG = "GetMeThere [dataService] ";
     //
 
 	// Defines
@@ -147,6 +148,11 @@ public class dataService {
 		return null;
 	}
 
+        // Returns the number of links in the JourneyPatternSection for the given journey
+        public int patternSectionSize( int departureTime ) {
+            return patternSects.patternSects.size();
+        }
+
 /*	// Returns the JourneyPatternTimingLink IDs for all links on the given journey
 	private Set patternLinkAll( int departureTime ) {
 		return patternSection( departureTime ).patternLinks.keySet();
@@ -204,7 +210,7 @@ public class dataService {
 
 		while( linkID.hasNext() ) {
 //                        // TESTING ONLY
-//                        Log.i( TAG, "[dataService] journeyRunTime(): **TEST** Using depTime " + departureTime );
+//                        Log.i( TAG, "[journeyRunTime] **TEST** Using depTime " + departureTime );
 //                        // TESTING END
                         // Are we using any acquired live times?
                         if( live )
@@ -322,7 +328,7 @@ public class dataService {
 				linkNo ++;
 
 //                                // TESTING ONLY
-//                                Log.i( TAG, "[dataService] activeLinkNo(): **TEST** Using depTime " + departureTime );
+//                                Log.i( TAG, "[activeLinkNo] **TEST** Using depTime " + departureTime );
 //                                // TESTING END
 
                                 // Are we using any acquired live times?
@@ -362,7 +368,7 @@ public class dataService {
 				dPL = dPS.patternLinks.get( linkID.next() );
 
 //                                // TESTING ONLY
-//                                Log.i( TAG, "[dataService] activeLink(): **TEST** Using depTime " + departureTime );
+//                                Log.i( TAG, "[activeLink] **TEST** Using depTime " + departureTime );
 //                                // TESTING END
 
                                 // TODO: Flag-change below to dPL.getScheduledRunTime() to get NON-live data!
@@ -371,6 +377,7 @@ public class dataService {
                                 if( live )
 				    timeNext = timePrevious + dPL.getRunTime( tDNow, departureTime );
                                 // Otherwise, return the scheduled times
+                                else
                                     timeNext = timePrevious + dPL.getScheduledRunTime();
 
 				// If the current time is between the previous and next stop times...
@@ -464,7 +471,7 @@ public class dataService {
 					dataPatternLink dPL = dPS.patternLinks.get( linkID.next() );
 
 //                                        // TESTING ONLY
-//                                        Log.i( TAG, "[dataService] offsetToStopNo(): **TEST** Using depTime " + departureTime );
+//                                        Log.i( TAG, "[offsetToStopNo] **TEST** Using depTime " + departureTime );
 //                                        // TESTING END
 
                                         // Are we using any acquired live times?
@@ -641,7 +648,7 @@ public class dataService {
 		// If we've got a valid journey to search, do so
 		if( journey != NOT_FOUND ) {
 //if( DEBUG )                
-                        Log.i( TAG, "[dataService] update(): Found valid journey (" + journey + ")" );
+                        Log.i( TAG, "[update] Found valid journey (" + journey + ")" );
 			dataPatternSect dPS = patternSection( journey );
 			// If we have a valid section, search for the given stop within it
 			if( dPS != null ) {
@@ -665,20 +672,54 @@ public class dataService {
                                                 // END TESTING
 
 //if( DEBUG )                                                
-						Log.i( TAG, "[dataService] UPDATE SUCCESSFUL for " + dSC.stopRef );
+						Log.i( TAG, "[update] UPDATE SUCCESSFUL for " + dSC.stopRef );
 						// Return success
 						return true;
 					}
 				}
 			}
                         else
-                            Log.e( TAG, "[dataService] update(): ERROR: No matching PatternSect on update!!" );
+                            Log.e( TAG, "[update] ERROR: No matching PatternSect on update!!" );
 		}
                 else
 if( DEBUG )                
-                    Log.e( TAG, "[dataService] update(): No associated journey found" );
+                    Log.e( TAG, "[update] No associated journey found" );
 
 		// If we're here, we failed to find the pattern section or link!
 		return false;
 	}
+
+	/* POLYLINE RELATED METHODS */
+/*        
+        // Returns the last link no. for which there is > 0% progress
+        public int progressIndex( int journey, double progress ) {
+            dataPatternSection dPS = patternSection( journey );
+            double total = 0, target = dPS.length() * progress;
+            int link = 1;
+            dataPatternLink dPL = linkNo( journey, link );
+
+            while( dPL != null ) {
+                total += dPL.length();
+                if( total > target )
+                    return link;
+
+                link ++;
+                dPL = linkNo( journey, link );
+            }
+
+            return 0;
+        }
+
+        // Return the progress for the last active link number
+        public double progressLine( int journey, int maxLink, double progress ) {
+            dataPatternSection dPS = patternSection( journey );
+            double target = dPS.length() * progress;
+            for( int link = 1; link < maxLink; link++ ) {
+                dataPatternLink dPL = linkNo( journey, link );
+                target -= dPL.length();
+            }
+
+            dPL = linkNo( journey, maxLink );
+            return target / dPL.length();
+        }*/
 }

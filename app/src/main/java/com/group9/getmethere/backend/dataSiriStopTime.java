@@ -5,14 +5,14 @@ import android.util.Log;
 public class dataSiriStopTime {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [dataSiriStopTime] ";
         //
 
 	private dataTime dT;
 
 	// Obtained data
 	// NB: An aimed time is scheduled, and an expected time is live
-	public String monitoringRef;
+	public String monitoringRef, directionName;
 	public dataTimeDate aimedDepartureTD, expectedDepartureTD;
 	public boolean hasAimed, hasExpected;
 	//
@@ -59,7 +59,7 @@ public class dataSiriStopTime {
 		String [] date = input.split( "T" );
                 // If we fail to extract the date, show an error and fail
 		if( !tD.setDate( date[ 0 ] ) )
-                    Log.e( TAG, "ERROR: dataSiriStopTime: Failed to extract date from '" + date[ 0 ] + "'." );
+                    Log.e( TAG, "[extractTime] ERROR: Failed to extract date from '" + date[ 0 ] + "'." );
                 // Otherwise, continue to process
                 else {
     	        	// If we have the right number of elements to process, go ahead
@@ -75,7 +75,7 @@ public class dataSiriStopTime {
 
 		// If we have the wrong number of elements or couldn't get a date, display an error
 		if( !success )
-			Log.e( TAG, "ERROR: dataSiriStopTime: Siri time of incorrect format (" + input + ")" );
+			Log.e( TAG, "[extractTime] ERROR: Siri time of incorrect format (" + input + ")" );
 		return tD;
 	}
 }

@@ -10,7 +10,7 @@ public class dataTimeDate {
     private static final int TD_ERROR = -2;
 
     // Logging
-    private static final String TAG = "GetMeThere";
+    private static final String TAG = "GetMeThere [dataTimeDate] ";
     //
 
     private Calendar cal;
@@ -86,7 +86,7 @@ public class dataTimeDate {
         }
         // If we have the wrong number of elements, display an error
         else
-            Log.e( TAG, "ERROR: dataTimeDate: given Date of incorrect format (" + date + ")" );
+            Log.e( TAG, "[convertStringToDate] ERROR: given Date of incorrect format (" + date + ")" );
 
         // If we dropped through, there was an error
         return false;
@@ -199,6 +199,11 @@ public class dataTimeDate {
             cal.add( cal.HOUR, 1 );
     }
 
+    public void delHour() {
+        if( set )
+            cal.add( cal.HOUR, -1 );
+    }
+
     public void addMinutes( int minutes ) {
         if( set )
             cal.add( cal.MINUTE, minutes );
@@ -232,10 +237,10 @@ public class dataTimeDate {
             return cal.compareTo( otherCal );
         }
         catch( NullPointerException e ) {
-            Log.e( TAG, "[dataTimeDate] ERROR: Null given instead of Calendar object." );
+            Log.e( TAG, "[compareCal] ERROR: Null given instead of Calendar object." );
         }
         catch( IllegalArgumentException e ) {
-            Log.e( TAG, "[dataTimeDate] ERROR: Invalid time value given within Calendar object." );
+            Log.e( TAG, "[compareCal] ERROR: Invalid time value given within Calendar object." );
         }
 
         return TD_ERROR;

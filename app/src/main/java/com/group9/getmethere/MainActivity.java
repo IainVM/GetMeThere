@@ -8,6 +8,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
+import android.content.res.AssetManager;
+
+// Logging
+import android.util.Log;
+
+// Backend imports
+import com.group9.getmethere.backend.*;
 
 import com.group9.getmethere.fragments.*;
 
@@ -15,6 +22,10 @@ public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks,
         NewsFragment.OnBusSelectedListener
 {
+
+    // Log
+    private static final String TAG = "GetMeThere [MainActivity] ";
+    //
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -28,8 +39,12 @@ public class MainActivity extends ActionBarActivity
     private CharSequence mTitle;
     private Fragment fragment;
 
+    // Backend-related members
+    public backendAPI bAPI;
+    //
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -42,6 +57,24 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+        // DJH: Set up the backend API
+        // Iain: Note that the backend is NOT ready for use until bAPI.isReady() returns
+        //  true! All data must be loaded first, this takes a while.
+        //  How about adding a busy indicator of some kind? Might make the rest of the
+        //  implementation a LOT simpler! :)
+        bAPI = new backendAPI( getAssets() );
+
+        // DJH: Start the update threads for all known services
+        startUpdateThreads sUT = new startUpdateThreads();
+        Thread sUTThread = new Thread( sUT );
+        sUTThread.start();
+        // Iain: Note you'll now need to call bAPI.checkAllUpdates() periodically from
+        //  within any fragment you want updated information available for. For the list
+        //  of services, for example, perhaps start a thread (see startUpdateThreads()
+        //  for an example of my version of this) which calls checkAllUpdates() every few
+        //  seconds whilst the view is active. checkAllUpdates() will update all the
+        //  information available, and then it's just a matter of updating the view
+        //  from the backend's information.
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         fragment = LoginFragment.newInstance(0);
@@ -127,9 +160,10 @@ public class MainActivity extends ActionBarActivity
         Bundle args = new Bundle();
 
         //TODO: need logic to go through the busses and find the position that corrisponds to this busName
+        //DJH: No you don't! :) Simply modify the call within NewsFragment->eventHandle() to provide the ID of
+        // the item that's been selected - that gives you your position (I think it's either i or l, or it can
+        // be gained from View method calls)
         int position = 0; //using as default for now
-
-
 
         args.putInt("busID", position);
         newFragment.setArguments(args);
@@ -168,4 +202,40 @@ public class MainActivity extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+    /* Backend-related methods */
+    // Return a handle to the backendAPI
+    public backendAPI backEnd() {
+    	return bAPI;
+    }
+
+    // Keep checking until the backend is ready, then start all the update threads
+    public class startUpdateThreads implements Runnable {
+
+        private boolean running = false;
+
+        public void run() {
+          while( !running ) {
+            Log.i( TAG, "[startUpdateThreads] Running" );
+
+            if( bAPI != null )
+              if( bAPI.isReady() ) {
+                Log.i( TAG, "[startUpdateThreads] Backend ready - starting update threads..." );
+
+                bAPI.startUpdates();
+                running = true;
+
+                Log.i( TAG, "[startUpdateThreads] Done!" );
+              }
+
+            try {
+              Thread.currentThread().sleep( 20000 );   // THIS CONTROLS THE CHECK FREQUENCY
+            }
+            catch( InterruptedException e ) {
+              Log.e( TAG, "[startUpdateThreads] Interrupted Exception " + e );
+            }
+          }
+        }
+    }
+    /* End of backend-related methods */
 }

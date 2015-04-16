@@ -5,7 +5,7 @@ import android.util.Log;
 public class dataTime {
 
         // Logging
-        private static final String TAG = "GetMeThere";
+        private static final String TAG = "GetMeThere [dataTime] ";
         //
 
 	private static final int MINS = 60;
@@ -38,7 +38,7 @@ public class dataTime {
 	public void setStringHMS( String sT ) {
 		String [] s = sT.split( ":" );
 		if( s.length < 3 )
-			Log.e( TAG, "ERROR: dataTime: Time string is of incorrect format (" + sT + ")" );
+			Log.e( TAG, "[setStringHMS] ERROR: Time string is of incorrect format (" + sT + ")" );
 
 		hours   = Integer.parseInt( s[ 0 ] );
 		minutes = Integer.parseInt( s[ 1 ] );
