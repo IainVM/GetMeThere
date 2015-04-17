@@ -27,4 +27,16 @@ public class dataStandard {
 
             return null;
         }
+
+        public String journeyDestination( String id ) {
+            dataPattern dP = journeyPatterns.get( id );
+            if( dP != null ) {
+                if( dP.direction.equals( dP.INBOUND ) )
+                    return origin;
+                else
+                    return destination;
+            }
+
+            return null;
+        }
 }
