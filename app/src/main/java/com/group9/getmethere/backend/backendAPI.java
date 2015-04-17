@@ -34,9 +34,9 @@ public class backendAPI {
     HashMap < Integer, Thread > updateThreads;
 
     public class Bus {
-        String name;
-        String from;
-        String to;
+        public String name;
+        public String from;
+        public String to;
         boolean direction;  // Necessary so this bus can be referenced (i.e. 54 is both outbound AND inbound!)
 
         public Bus( String n, String f, String t, boolean d ) {
