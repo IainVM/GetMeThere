@@ -4,6 +4,7 @@ import android.util.Log;
 
 import android.content.res.AssetManager;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.HashMap;
@@ -33,7 +34,7 @@ public class backendAPI {
     // HashMap used to store all active update threads
     HashMap < Integer, Thread > updateThreads;
 
-    public class Bus {
+    public class Bus implements Serializable{
         public String name;
         public String from;
         public String to;

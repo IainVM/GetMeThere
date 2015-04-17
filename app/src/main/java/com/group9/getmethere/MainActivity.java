@@ -1,5 +1,6 @@
 package com.group9.getmethere;
 
+import android.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -143,38 +144,6 @@ public class MainActivity extends ActionBarActivity
         actionBar.setTitle(mTitle);
     }
 
-    public void onBusSelected(int position){
-        Fragment newFragment = BusFragment.newInstance(6);
-        Bundle args = new Bundle();
-        args.putInt("busID", position);
-        newFragment.setArguments(args);
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, newFragment);
-        transaction.addToBackStack(null);
-
-        transaction.commit();
-    }
-    public void onBusSelected(String busName){
-        Fragment newFragment = BusFragment.newInstance(6);
-        Bundle args = new Bundle();
-
-        //TODO: need logic to go through the busses and find the position that corrisponds to this busName
-        //DJH: No you don't! :) Simply modify the call within NewsFragment->eventHandle() to provide the ID of
-        // the item that's been selected - that gives you your position (I think it's either i or l, or it can
-        // be gained from View method calls)
-        int position = 0; //using as default for now
-
-        args.putInt("busID", position);
-        newFragment.setArguments(args);
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, newFragment);
-        transaction.addToBackStack(null);
-
-        transaction.commit();
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (!mNavigationDrawerFragment.isDrawerOpen()) {
@@ -207,6 +176,19 @@ public class MainActivity extends ActionBarActivity
     // Return a handle to the backendAPI
     public backendAPI backEnd() {
     	return bAPI;
+    }
+
+    @Override
+    public void onBusSelected(backendAPI.Bus bus) {
+        getIntent().putExtra("bus", bus);
+
+        fragment = BusFragment.newInstance(6);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+
     }
 
     // Keep checking until the backend is ready, then start all the update threads

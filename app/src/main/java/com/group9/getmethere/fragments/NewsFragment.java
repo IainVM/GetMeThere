@@ -35,7 +35,6 @@ public class NewsFragment extends Fragment {
     private static final String TAG = "GetMeThere [NewsFragment] ";
 
 
-    private OnFragmentInteractionListener mListener;
     OnBusSelectedListener mCallback;
 
     private static final String ARG_SECTION_NUMBER = "section_number";
@@ -45,12 +44,9 @@ public class NewsFragment extends Fragment {
     updateLoop uL = null;
     //
 
-    // ListView related members - moved here for global availability (temporarily)
-    private BusListAdapter recAdapter;
     private ListView NewsListView;
     public ArrayList<backendAPI.Bus> busses = new ArrayList<backendAPI.Bus>();
     private View rootView = null;
-    private Thread updateThread = null;
     //
 
     public static NewsFragment newInstance(int sectionNumber) {
@@ -68,8 +64,7 @@ public class NewsFragment extends Fragment {
     }
 
     public interface OnBusSelectedListener {
-        public void onBusSelected(int i);
-        public void onBusSelected(String title);
+        public void onBusSelected(backendAPI.Bus bus);
     }
 
     @Override
@@ -95,7 +90,7 @@ public class NewsFragment extends Fragment {
 
         // Backend related - start a thread to handle updating of the ListView
         uL = new updateLoop();
-        updateThread = new Thread( uL );
+        Thread updateThread = new Thread(uL);
         updateThread.start();
         //
 
@@ -134,7 +129,7 @@ public class NewsFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        OnFragmentInteractionListener mListener = null;
     }
 
     /**
@@ -154,7 +149,7 @@ public class NewsFragment extends Fragment {
 
     public void populateBuses(final View rootView){
 
-        recAdapter = new BusListAdapter(this.getActivity(), busses);
+        BusListAdapter recAdapter = new BusListAdapter(this.getActivity(), busses);
 
         // ListViews display data in a scrollable list
         NewsListView = (ListView) rootView.findViewById(R.id.news_list);
@@ -221,9 +216,9 @@ public class NewsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                String title = ((TextView) view.findViewById(R.id.busName)).getText().toString();
+                backendAPI.Bus bus = (backendAPI.Bus) adapterView.getAdapter().getItem(i);
 
-                mCallback.onBusSelected(title);
+                mCallback.onBusSelected(bus);
             }
         });
     }

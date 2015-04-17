@@ -1,13 +1,18 @@
 package com.group9.getmethere.fragments;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import com.group9.getmethere.R;
+import com.group9.getmethere.backend.backendAPI;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
@@ -22,7 +27,7 @@ public class BusFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     private static final String ARG_SECTION_NUMBER = "section_number";
-    private int busID;
+    private backendAPI.Bus bus;
 
     public static BusFragment newInstance(int sectionNumber) {
         BusFragment fragment = new BusFragment();
@@ -44,9 +49,11 @@ public class BusFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_bus, container, false);
 
-        busID = getArguments().getInt("busID");
+        Intent i = getActivity().getIntent();
 
-        populateInfo(rootView, busID);
+        bus = (backendAPI.Bus) i.getSerializableExtra("bus");
+
+        populateInfo(rootView);
 
         return rootView;
     }
@@ -72,10 +79,17 @@ public class BusFragment extends Fragment {
     }
 
 
-    public void populateInfo(View rootView, int busID){
+    public void populateInfo(View rootView){
 
         //TODO:Logic to display this bus numbers info using the API
+        TextView busName = (TextView) rootView.findViewById(R.id.busName);
+        busName.setText(this.bus.name);
 
+        TextView busTo = (TextView) rootView.findViewById(R.id.busTo);
+        busTo.setText(this.bus.to);
+
+        TextView busFrom = (TextView) rootView.findViewById(R.id.busFrom);
+        busFrom.setText(this.bus.from);
 
     }
 
