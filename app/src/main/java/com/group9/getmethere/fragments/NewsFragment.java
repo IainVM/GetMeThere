@@ -76,11 +76,22 @@ public class NewsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        rootView = inflater.inflate(R.layout.fragment_news, container, false);
+
+        populateBuses(rootView);
+        eventHandle(rootView);
+
+        return rootView;
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+
         // Instantiate the backend
-      	bAPI = ((MainActivity)this.getActivity()).backEnd();
+        bAPI = ((MainActivity)this.getActivity()).backEnd();
         //
 
-        rootView = inflater.inflate(R.layout.fragment_news, container, false);
 
         // Backend related - start a thread to handle updating of the ListView
         uL = new updateLoop();
@@ -88,10 +99,6 @@ public class NewsFragment extends Fragment {
         updateThread.start();
         //
 
-        populateBuses(rootView);
-        eventHandle(rootView);
-
-        return rootView;
     }
 
     @Override
@@ -108,21 +115,25 @@ public class NewsFragment extends Fragment {
     }
 
     @Override
-    public void onDetach() {
-        super.onDetach();
-
+    public void onPause(){
+        super.onPause();
         // updateLoop kill code
         // Iain: does the updateLoop need to be instantiated in onAttach? Or is onCreate
         //  the right place for it? I'm unsure :)
         Log.i( TAG, "[onDetach] Trying to kill updateLoop..." );
         if( uL != null ) {
-          uL.kill();
-          Log.i( TAG, "[onDetach] Success." );
+            uL.kill();
+            Log.i( TAG, "[onDetach] Success." );
         }
         else
-          Log.e( TAG, "[onDetach] ERROR: Attempted to kill non-existent updateLoop!" );
+            Log.e( TAG, "[onDetach] ERROR: Attempted to kill non-existent updateLoop!" );
         //
 
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
         mListener = null;
     }
 
