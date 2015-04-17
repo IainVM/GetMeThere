@@ -37,7 +37,7 @@ public class backendAPI {
         public String name;
         public String from;
         public String to;
-        boolean direction;  // Necessary so this bus can be referenced (i.e. 54 is both outbound AND inbound!)
+        public boolean direction;  // Necessary so this bus can be referenced (i.e. 54 is both outbound AND inbound!)
 
         public Bus( String n, String f, String t, boolean d ) {
             name = n; from = f; to = t; direction = d;
