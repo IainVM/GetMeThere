@@ -149,7 +149,7 @@ public class NewsFragment extends Fragment {
 
     public void populateBuses(final View rootView){
 
-        BusListAdapter recAdapter = new BusListAdapter(this.getActivity(), busses);
+        BusListAdapter recAdapter = new BusListAdapter(this.getActivity(), busses, bAPI);
 
         // ListViews display data in a scrollable list
         NewsListView = (ListView) rootView.findViewById(R.id.news_list);

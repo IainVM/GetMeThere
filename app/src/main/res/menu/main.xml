@@ -1,8 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="#33B5E5"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_example" android:title="@string/action_example"
-        android:showAsAction="withText|ifRoom" />
+        android:showAsAction="withText|ifRoom"
+        android:textColor="#33B5E5"/>
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" android:showAsAction="never" />
+        android:orderInCategory="100" android:showAsAction="never"
+        android:textColor="#33B5E5"/>
 </menu>

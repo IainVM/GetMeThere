@@ -3,26 +3,82 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/busName"
-        android:textStyle="bold"
-        android:textSize="22sp"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/busTo"
-        android:textStyle="bold"
-        android:textSize="22sp"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/busFrom"
-        android:textStyle="bold"
-        android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="@string/busNameHeader"
+                android:textColor="#33B5E5"
+                android:textSize="22sp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/busName"
+                android:textStyle="bold"
+                android:textColor="#33B5E5"
+                android:textSize="25sp"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/busTime"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textColor="#33B5E5"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textStyle="bold"
+                    android:textColor="#33B5E5"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/press_message"
+                android:textStyle="bold"
+                android:textColor="#33B5E5"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
