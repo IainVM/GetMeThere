@@ -11,6 +11,7 @@ import java.util.Iterator;
 
 //ifdef android
 import android.os.AsyncTask;
+import java.io.Serializable;
 //endif android
 
 public class backendAPI {
@@ -33,11 +34,15 @@ public class backendAPI {
     // HashMap used to store all active update threads
     HashMap < Integer, Thread > updateThreads;
 
-    public class Bus {
-        String name;
-        String from;
-        String to;
-        boolean direction;  // Necessary so this bus can be referenced (i.e. 54 is both outbound AND inbound!)
+    public class Bus 
+//ifdef android
+        implements Serializable
+//endif android
+    {
+        public String name;
+        public String from;
+        public String to;
+        public boolean direction;  // Necessary so this bus can be referenced (i.e. 54 is both outbound AND inbound!)
 
         public Bus( String n, String f, String t, boolean d ) {
             name = n; from = f; to = t; direction = d;
@@ -47,7 +52,7 @@ public class backendAPI {
     String serviceNames[] = { "10", "27", "54", "61" };
 
     private AssetManager assets;
-    private tndsParse tnds = new tndsParse();
+    public tndsParse tnds = new tndsParse();
     private dataTimeDate tD = new dataTimeDate();
 
     public ArrayList <Bus> busses;
@@ -70,58 +75,55 @@ public class backendAPI {
 //endif android
 
 /*ifdef pc
-        // Parse all known services
-        for( int i = 0; i < serviceNames.length; i++ )
-            tnds.parse( assets, serviceNames[ i ] );
-
-        // Parse NaPTAN data
-        naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
-
-        // Fill the busses array
-        for( int i = 0; i < serviceNames.length; i++ ) {
-            // Inbound services
-            dataService sI = tnds.services.get( serviceNames[ i ], INBOUND );
-            Bus busI = new Bus( sI.lineName, sI.stdService.origin, sI.stdService.destination, INBOUND );
-            busses.add( busI );
-            // Outbound services
-            dataService sO = tnds.services.get( serviceNames[ i ], OUTBOUND );
-            Bus busO = new Bus( sO.lineName, sO.stdService.origin, sO.stdService.destination, OUTBOUND );
-            busses.add( busO );
-        }
-
+        loadData();
         ready = true;
 endif pc*/
+    }
+
+    public void loadData() {
+      // BEGIN SERVICE DATA SETUP
+      Log.i( TAG, "[loadData] Beginning services setup." );
+
+      // Parse all known services
+      for( int i = 0; i < serviceNames.length; i++ ) {
+        Log.i( TAG, "[loadData] Adding inbound/outbound for service " + serviceNames[ i ] );
+        tnds.parse( assets, serviceNames[ i ] );
+      }
+
+      // Fetch stop geolocation data
+      Log.i( TAG, "[loadData] Loading NaPTAN data" );
+      naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
+
+      // Fill the busses array
+      Log.i( TAG, "[loadData] Filling busses array with obtained data" );
+      tD.setCurrent();
+      for( int i = 0; i < serviceNames.length; i++ ) {
+          // Inbound services
+          dataService sI = tnds.services.get( serviceNames[ i ], INBOUND );
+          int nextJourneyI = sI.nextJourney( tD, tD, false );
+          String nextJourneyPatternRefI = sI.journeys.journeys.get( nextJourneyI ).journeyPatternRef;
+          String originI = sI.stdService.journeyOrigin( nextJourneyPatternRefI );
+//          String destinationI = sI.stdService.journeyPatterns.get( nextJourneyPatternRefI ).destinationDisplay;
+          String destinationI = sI.stdService.journeyDestination( nextJourneyPatternRefI );
+          Bus busI = new Bus( sI.lineName, originI, destinationI, INBOUND );
+          busses.add( busI );
+          // Outbound services
+          dataService sO = tnds.services.get( serviceNames[ i ], OUTBOUND );
+          int nextJourneyO = sO.nextJourney( tD, tD, false );
+          String nextJourneyPatternRefO = sO.journeys.journeys.get( nextJourneyO ).journeyPatternRef;
+          String originO = sO.stdService.journeyOrigin( nextJourneyPatternRefO );
+//          String destinationO = sO.stdService.journeyPatterns.get( nextJourneyPatternRefO ).destinationDisplay;
+          String destinationO = sO.stdService.journeyDestination( nextJourneyPatternRefO );
+          Bus busO = new Bus( sO.lineName, originO, destinationO, OUTBOUND );
+          busses.add( busO );
+      }
     }
 
 //ifdef android
     public class initialise extends AsyncTask <Void, Void, Void> {
 
       protected Void doInBackground( Void... params ) {
-        // BEGIN SERVICE DATA SETUP
-        Log.i( TAG, "[initialise] Beginning services setup." );
-
-        // Parse all known services
-        for( int i = 0; i < serviceNames.length; i++ ) {
-          Log.i( TAG, "[initialise] Adding inbound/outbound for service " + serviceNames[ i ] );
-          tnds.parse( assets, serviceNames[ i ] );
-        }
-
-        // Fetch stop geolocation data
-        Log.i( TAG, "[initialise] Loading NaPTAN data" );
-        naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
-
-        // Fill the busses array
-        Log.i( TAG, "[initialise] Filling busses array with obtained data" );
-        for( int i = 0; i < serviceNames.length; i++ ) {
-            // Inbound services
-            dataService sI = tnds.services.get( serviceNames[ i ], INBOUND );
-            Bus busI = new Bus( sI.lineName, sI.stdService.origin, sI.stdService.destination, INBOUND );
-            busses.add( busI );
-            // Outbound services
-            dataService sO = tnds.services.get( serviceNames[ i ], OUTBOUND );
-            Bus busO = new Bus( sO.lineName, sO.stdService.origin, sO.stdService.destination, OUTBOUND );
-            busses.add( busO );
-        }
+        loadData();
 
         return null;
       }
@@ -189,6 +191,17 @@ endif pc*/
         }
 
         return null;
+    }
+
+    // Returns the direction of service no. n from the busses array
+    public boolean direction( int n ) {
+        // Range check
+        if( n >= 0 && n < busses.size() ) {
+            Bus bus = busses.get( n );
+            return bus.direction;
+        }
+
+        return false;
     }
 
     // Tells you whether a given service has an active journey at the moment
@@ -267,7 +280,7 @@ endif pc*/
     public String strScheduledTimeOfArrival( String serviceName, boolean serviceDirection ) {
         dataTime dT = scheduledTimeOfArrival( serviceName, serviceDirection );
         if( dT != null )
-            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
 
         return null;
     }
@@ -276,7 +289,7 @@ endif pc*/
     public String strTimeOfArrival( String serviceName, boolean serviceDirection ) {
         dataTime dT = timeOfArrival( serviceName, serviceDirection );
         if( dT != null )
-            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
 
         return null;
     }
@@ -285,7 +298,7 @@ endif pc*/
     public String strTimeOfArrivalDelay( String serviceName, boolean serviceDirection ) {
         dataTime dT = timeOfArrivalDelay( serviceName, serviceDirection );
         if( dT != null )
-            return dT.hours + ":" + dT.minutes + ":" + dT.seconds;
+            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
 
         return null;
     }
@@ -336,6 +349,69 @@ endif pc*/
 
         return null;
     }
+
+    // Returns true if the current service has been delayed to its next stop
+    public boolean isDelayed( String serviceName, boolean serviceDirection ) {
+        dataTime delay = timeOfArrivalDelay( serviceName, serviceDirection );
+        if( delay != null )
+            if( delay.time > 0 )
+                return true;
+
+        return false;
+    }
+
+    // Returns the start time of the next journey - should be used if isActive() == false
+    public dataTime timeOfNextJourney( String serviceName, boolean serviceDirection ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null )
+            // Return the next journey time
+            return new dataTime( service.nextJourney( tD, tD, false ) );
+
+        return null;
+    }
+
+    // Returns a String representation of the time of the next journey
+    public String strTimeOfNextJourney( String serviceName, boolean serviceDirection ) {
+        dataTime dT = timeOfNextJourney( serviceName, serviceDirection );
+        if( dT != null )
+            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
+
+        return null;
+    }
+
+    // Returns the destination of the next journey - should be used if isActive() == false
+    public String nextDestination( String serviceName, boolean serviceDirection ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null ) {
+            int next = service.nextJourney( tD, tD, false );
+            String nextJourneyPatternRef = service.journeys.journeys.get( next ).journeyPatternRef;
+            return service.stdService.journeyPatterns.get( nextJourneyPatternRef ).destinationDisplay;
+        }
+
+        return null;
+    }
+
+    // Returns the first stop of next journey - should be used if isActive() == false
+    public String firstStopOfNextJourney( String serviceName, boolean serviceDirection ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null )
+            return tnds.stops.name( service.stopRef( service.nextJourney( tD, tD, false ), 1 ) );
+
+        return null;
+    }
+
 
     /* UPDATE RELATED METHODS */
 

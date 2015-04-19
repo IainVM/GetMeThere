@@ -1,5 +1,6 @@
 package com.group9.getmethere;
 
+import android.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -12,9 +13,14 @@ import android.content.res.AssetManager;
 
 // Logging
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 // Backend imports
 import com.group9.getmethere.backend.*;
+
+// NASTY NETWORK-ACCESS TESTING BODGE IMPORT
+import android.os.StrictMode;
 
 import com.group9.getmethere.fragments.*;
 
@@ -41,12 +47,20 @@ public class MainActivity extends ActionBarActivity
 
     // Backend-related members
     public backendAPI bAPI;
+    private AssetManager assets;
     //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // NASTY TEST BODGE (to allow net access from main activity - pathRequest() causes crash without this!!)
+        //  Testing only - this should be resolved using proper Android protocol (TODO)
+        StrictMode.ThreadPolicy policy = new StrictMode.
+        ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy( policy );
+
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -58,10 +72,7 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         // DJH: Set up the backend API
-        // Iain: Note that the backend is NOT ready for use until bAPI.isReady() returns
-        //  true! All data must be loaded first, this takes a while.
-        //  How about adding a busy indicator of some kind? Might make the rest of the
-        //  implementation a LOT simpler! :)
+        assets = getAssets();
         bAPI = new backendAPI( getAssets() );
 
         // DJH: Start the update threads for all known services
@@ -143,38 +154,6 @@ public class MainActivity extends ActionBarActivity
         actionBar.setTitle(mTitle);
     }
 
-    public void onBusSelected(int position){
-        Fragment newFragment = BusFragment.newInstance(6);
-        Bundle args = new Bundle();
-        args.putInt("busID", position);
-        newFragment.setArguments(args);
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, newFragment);
-        transaction.addToBackStack(null);
-
-        transaction.commit();
-    }
-    public void onBusSelected(String busName){
-        Fragment newFragment = BusFragment.newInstance(6);
-        Bundle args = new Bundle();
-
-        //TODO: need logic to go through the busses and find the position that corrisponds to this busName
-        //DJH: No you don't! :) Simply modify the call within NewsFragment->eventHandle() to provide the ID of
-        // the item that's been selected - that gives you your position (I think it's either i or l, or it can
-        // be gained from View method calls)
-        int position = 0; //using as default for now
-
-        args.putInt("busID", position);
-        newFragment.setArguments(args);
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, newFragment);
-        transaction.addToBackStack(null);
-
-        transaction.commit();
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (!mNavigationDrawerFragment.isDrawerOpen()) {
@@ -207,6 +186,25 @@ public class MainActivity extends ActionBarActivity
     // Return a handle to the backendAPI
     public backendAPI backEnd() {
     	return bAPI;
+    }
+
+    // Return a handle to the assets
+    public AssetManager assetsHandle() {
+        return assets;
+    }
+
+
+    @Override
+    public void onBusSelected(backendAPI.Bus bus) {
+        getIntent().putExtra("bus", bus);
+
+        fragment = BusFragment.newInstance(6);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+
     }
 
     // Keep checking until the backend is ready, then start all the update threads

@@ -6,7 +6,7 @@ public class dataStandard {
 	
 	public String origin, destination;
 
-	HashMap < String, dataPattern > journeyPatterns;
+	public HashMap < String, dataPattern > journeyPatterns;
 
 	public dataStandard() {
 	    journeyPatterns = new HashMap < String, dataPattern >();
@@ -23,6 +23,18 @@ public class dataStandard {
                     return destination;
                 else
                     return origin;
+            }
+
+            return null;
+        }
+
+        public String journeyDestination( String id ) {
+            dataPattern dP = journeyPatterns.get( id );
+            if( dP != null ) {
+                if( dP.direction.equals( dP.INBOUND ) )
+                    return origin;
+                else
+                    return destination;
             }
 
             return null;

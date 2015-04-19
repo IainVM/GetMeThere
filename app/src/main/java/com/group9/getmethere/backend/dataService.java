@@ -113,6 +113,37 @@ public class dataService {
 		return selected;
 	}
 
+        /* If no journey available on this day, checks for the next day's journey */
+	public int nextJourney( dataTimeDate tDNow, dataTimeDate tDSim, boolean live ) {
+		boolean first = true, stop = false, found = false;
+		int active = activeJourney( tDNow, tDSim, live );
+		int current, selected = NOT_FOUND;
+	
+                List < Integer > journeyTimesList = new ArrayList < Integer >( journeys.journeys.keySet() );
+                Collections.sort( journeyTimesList );
+                Iterator journeyTimes = journeyTimesList.iterator();
+
+		while( journeyTimes.hasNext() && stop != true ) {
+			current = (Integer) journeyTimes.next();
+                        // If this is the first journey, store in in case we don't find another
+                        if( first == true ) {
+                            selected = current;
+                            first = false;
+                        }
+                        // If we've already found the active journey, this must be the next one
+                        if( found == true ) {
+                            selected = current;
+                            stop = true;
+                        }
+			// If we found the currently active journey..
+			if( current == active )
+		            // End the loop
+			    found = true;
+		}
+
+		return selected;
+	}
+
 	// Returns a value denoting the run state of a given journey, or an error if the journey is not known
 	public byte stateJourney( dataTimeDate tDNow, dataTimeDate tDSim, int departureTime, boolean live ) {
                 // Only test if we have a matching journey
