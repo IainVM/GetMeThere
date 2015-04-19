@@ -33,8 +33,8 @@ public class BusFragment extends Fragment {
     private backendAPI.Bus bus;
 
     private String time = "-";
-    private String service = bus.name;
-    private boolean dir = bus.direction;
+    private String service = null;
+    private boolean dir = false;
 
     updateLoop uL = null;
 
@@ -72,6 +72,9 @@ public class BusFragment extends Fragment {
         bAPI = ((MainActivity)this.getActivity()).backEnd();
 
         bus = (backendAPI.Bus) i.getSerializableExtra("bus");
+
+        this.service = bus.name;
+        this.dir = bus.direction;
 
         populateInfo(rootView);
 
