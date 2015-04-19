@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.group9.getmethere.MainActivity;
@@ -41,6 +42,7 @@ public class NewsFragment extends Fragment {
     // Backend-related members
     private backendAPI bAPI = null;
     updateLoop uL = null;
+    public ProgressBar spinner;
     //
 
     private ListView NewsListView;
@@ -71,6 +73,8 @@ public class NewsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         rootView = inflater.inflate(R.layout.fragment_news, container, false);
+
+        spinner = (ProgressBar)rootView.findViewById(R.id.progressBar);
 
         populateBuses(rootView);
         eventHandle(rootView);
@@ -176,6 +180,13 @@ public class NewsFragment extends Fragment {
 
                 if( bAPI != null ) {
                     if (bAPI.isReady()) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                spinner.setVisibility(View.GONE);
+
+                            }
+                        });
                         Log.i(TAG, "[updateLoop] Getting data for ArrayLists from backendAPI...");
 
                         // Iain: I'd rather be sending a <Bus> ArrayList to recAdapter since you can
@@ -195,7 +206,10 @@ public class NewsFragment extends Fragment {
 
                             }
                         });
+
                         Log.i(TAG, "[updateLoop] Done!");
+                    }else{
+                        spinner.setVisibility(View.VISIBLE);
                     }
 
                     try {

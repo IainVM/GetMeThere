@@ -13,6 +13,8 @@ import android.content.res.AssetManager;
 
 // Logging
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 // Backend imports
 import com.group9.getmethere.backend.*;
@@ -63,6 +65,7 @@ public class MainActivity extends ActionBarActivity
         //  true! All data must be loaded first, this takes a while.
         //  How about adding a busy indicator of some kind? Might make the rest of the
         //  implementation a LOT simpler! :)
+
         bAPI = new backendAPI( getAssets() );
 
         // DJH: Start the update threads for all known services
