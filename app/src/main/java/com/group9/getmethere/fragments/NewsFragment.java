@@ -34,7 +34,6 @@ public class NewsFragment extends Fragment {
     // Log
     private static final String TAG = "GetMeThere [NewsFragment] ";
 
-
     OnBusSelectedListener mCallback;
 
     private static final String ARG_SECTION_NUMBER = "section_number";

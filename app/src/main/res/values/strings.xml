@@ -73,5 +73,6 @@
     <string name="busNameHeader">Bus</string>
     <string name="delay">minutes late</string>
     <string name="press_message">Press for more details</string>
+    <string name="to">to</string>
 
 </resources>

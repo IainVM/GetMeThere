@@ -24,6 +24,7 @@ public class BusListAdapter extends ArrayAdapter<backendAPI.Bus> {
     private ArrayList<backendAPI.Bus> busses;
     private backendAPI api;
 
+
     public BusListAdapter(Context context, ArrayList<backendAPI.Bus> busses, backendAPI api) {
         super(context, R.layout.bus_list_item, busses);
         this.context = context;
