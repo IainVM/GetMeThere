@@ -1,6 +1,8 @@
 package com.group9.getmethere.backend;
 
-public class dataJourney {
+import java.io.Serializable;
+
+public class dataJourney implements Serializable {
 
 	// defines
 	public static final int MONDAY		= 1;

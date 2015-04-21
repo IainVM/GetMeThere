@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.HashMap;
 
-public class dataStandard {
+public class dataStandard implements Serializable {
 	
 	public String origin, destination;
 

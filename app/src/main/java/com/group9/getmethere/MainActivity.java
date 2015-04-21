@@ -73,7 +73,7 @@ public class MainActivity extends ActionBarActivity
 
         // DJH: Set up the backend API
         assets = getAssets();
-        bAPI = new backendAPI( getAssets() );
+        bAPI = new backendAPI( this, getAssets() );
 
         // DJH: Start the update threads for all known services
         startUpdateThreads sUT = new startUpdateThreads();

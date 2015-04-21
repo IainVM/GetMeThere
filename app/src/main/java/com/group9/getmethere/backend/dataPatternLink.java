@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import android.util.Log;
 
-public class dataPatternLink {
+public class dataPatternLink implements Serializable {
 
         // Debug
         public static boolean DEBUG = false;

@@ -1,9 +1,11 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.HashMap;
 import android.util.Log;
 
-public class dataServices {
+public class dataServices implements Serializable {
 
   // Debug
   private static boolean DEBUG = false;

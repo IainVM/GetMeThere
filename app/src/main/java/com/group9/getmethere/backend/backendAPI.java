@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 //ifdef android
+import android.content.Context;
 import android.os.AsyncTask;
 import java.io.Serializable;
 //endif android
@@ -51,6 +52,9 @@ public class backendAPI {
 
     String serviceNames[] = { "10", "27", "54", "61" };
 
+//ifdef android
+    private Context context;
+//endif android
     private AssetManager assets;
     public tndsParse tnds = new tndsParse();
     private dataTimeDate tD = new dataTimeDate();
@@ -60,9 +64,16 @@ public class backendAPI {
     public final boolean OUTBOUND  = tnds.services.OUTBOUND;
 
     // Constructor: parses the TNDS and stores the data
-    public backendAPI( AssetManager aM ) {
+    public backendAPI(
+//ifdef android
+                      Context c,
+//endif android
+                                AssetManager aM ) {
         updates = new HashMap < String, siriUpdates > ();
         updateThreads = new HashMap < Integer, Thread > ();
+//ifdef android
+        context = c;
+//endif android
         assets = aM;
 
         // Create an empty busses array
@@ -82,17 +93,34 @@ endif pc*/
 
     public void loadData() {
       // BEGIN SERVICE DATA SETUP
-      Log.i( TAG, "[loadData] Beginning services setup." );
-
-      // Parse all known services
-      for( int i = 0; i < serviceNames.length; i++ ) {
-        Log.i( TAG, "[loadData] Adding inbound/outbound for service " + serviceNames[ i ] );
-        tnds.parse( assets, serviceNames[ i ] );
+      Log.i( TAG, "[loadData] Searching for stored TNDS..." );
+//ifdef android
+      stateStore.setContext( context );
+//endif android
+      Object obj = stateStore.loadState( "tnds" );
+      if( obj != null ) {
+        tnds = (tndsParse) obj;
+        Log.i( TAG, "[loadData] Stored TNDS found and loaded!" );
       }
+      else {
+        Log.i( TAG, "[loadData] No stored TNDS found. Constructing..." );
 
-      // Fetch stop geolocation data
-      Log.i( TAG, "[loadData] Loading NaPTAN data" );
-      naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
+        // Parse all known services
+        for( int i = 0; i < serviceNames.length; i++ ) {
+          Log.i( TAG, "[loadData] Adding inbound/outbound for service " + serviceNames[ i ] );
+          tnds.parse( assets, serviceNames[ i ] );
+        }
+
+        // Fetch stop geolocation data
+        Log.i( TAG, "[loadData] Loading NaPTAN data" );
+        naptanParse naptan = new naptanParse( assets, tnds.stops, "NaPTAN_571-541.xml" );
+        
+        // Attempt to store state
+        if( stateStore.saveState( "tnds", ( Object ) tnds ) )
+          Log.i( TAG, "[loadData] TNDS state stored." );
+        else
+          Log.e( TAG, "[loadData] Could not store TNDS!" );
+      }
 
       // Fill the busses array
       Log.i( TAG, "[loadData] Filling busses array with obtained data" );

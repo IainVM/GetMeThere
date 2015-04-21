@@ -1,9 +1,11 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.TreeMap;
 import java.util.Iterator;
 
-public class dataPatternSect {
+public class dataPatternSect implements Serializable {
 
 	TreeMap < String, dataPatternLink > patternLinks;
 

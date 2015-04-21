@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.HashMap;
 
-public class dataPatternSects {
+public class dataPatternSects implements Serializable {
 
 	public HashMap < String, dataPatternSect > patternSects;
 
