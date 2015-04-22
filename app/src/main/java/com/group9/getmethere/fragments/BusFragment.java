@@ -391,7 +391,8 @@ public class BusFragment extends Fragment {
             stopRefTo          = service.activeStopRefTo( tD, tD, selectedJourney, true );
             journeyPatternRef  = service.journeys.journeys.get( selectedJourney ).journeyPatternRef;
             destinationDisplay = service.stdService.journeyPatterns.get( journeyPatternRef ).destinationDisplay;
-            siri.update( tD, tD, serviceName, destinationDisplay, selectedJourney, stopRefTo );
+            if( siri != null )
+                siri.update( tD, tD, serviceName, destinationDisplay, selectedJourney, stopRefTo );
             // Check for active live links
             live = service.activeLink( tD, tD, selectedJourney, true ).hasLiveTime( selectedJourney );
 //ifdef android		    

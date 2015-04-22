@@ -52,6 +52,20 @@ public class backendAPI {
 
     String serviceNames[] = { "10", "27", "54", "61" };
 
+    public class TimetableEntry
+//ifdef android
+        implements Serializable
+//endif android
+    {
+        public String stopName;
+        public String stopTime;
+
+        public TimetableEntry( String sN, String sT ) {
+            stopName = sN; stopTime = sT;
+        }
+    }
+
+
 //ifdef android
     private Context context;
 //endif android
@@ -173,14 +187,18 @@ endif pc*/
 
     // Returns the current time as a string
     public String currentTime() {
-        tD.setCurrent();
-        return tD.hour() + ":" + tD.minute() + ":" + tD.second();
+        return dataTimeToString( dtCurrentTime() );
     }
 
     // Returns the current time as a dataTime object
     public dataTime dtCurrentTime() {
         tD.setCurrent();
         return new dataTime( tD.time() );
+    }
+
+    // UTILITY: Converts a dataTime into a String
+    public String dataTimeToString( dataTime dT ) {
+        return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
     }
 
     // Returns the total number of known services
@@ -308,7 +326,7 @@ endif pc*/
     public String strScheduledTimeOfArrival( String serviceName, boolean serviceDirection ) {
         dataTime dT = scheduledTimeOfArrival( serviceName, serviceDirection );
         if( dT != null )
-            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
+            return dataTimeToString( dT );
 
         return null;
     }
@@ -317,7 +335,7 @@ endif pc*/
     public String strTimeOfArrival( String serviceName, boolean serviceDirection ) {
         dataTime dT = timeOfArrival( serviceName, serviceDirection );
         if( dT != null )
-            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
+            return dataTimeToString( dT );
 
         return null;
     }
@@ -326,7 +344,7 @@ endif pc*/
     public String strTimeOfArrivalDelay( String serviceName, boolean serviceDirection ) {
         dataTime dT = timeOfArrivalDelay( serviceName, serviceDirection );
         if( dT != null )
-            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
+            return dataTimeToString( dT );
 
         return null;
     }
@@ -402,13 +420,9 @@ endif pc*/
         return null;
     }
 
-    // Returns a String representation of the time of the next journey
+    // Returns a string version of the start time of the next journey - use if isActive() == false, as above
     public String strTimeOfNextJourney( String serviceName, boolean serviceDirection ) {
-        dataTime dT = timeOfNextJourney( serviceName, serviceDirection );
-        if( dT != null )
-            return String.format( "%02d:%02d:%02d", dT.hours, dT.minutes, dT.seconds );
-
-        return null;
+        return dataTimeToString( timeOfNextJourney( serviceName, serviceDirection ) );
     }
 
     // Returns the destination of the next journey - should be used if isActive() == false
@@ -436,6 +450,121 @@ endif pc*/
         // Does the service exist?
         if( service != null )
             return tnds.stops.name( service.stopRef( service.nextJourney( tD, tD, false ), 1 ) );
+
+        return null;
+    }
+
+    // Returns an ArrayList containing every journey time (as a String) for a given service
+    public ArrayList <String> journeyTimes( String serviceName, boolean serviceDirection ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null ) {
+            ArrayList <String> times = new ArrayList <String> ();
+
+            Iterator journeys = service.journeys.journeys.keySet().iterator();
+            while( journeys.hasNext() ) {
+                dataTime dT = new dataTime( (int) journeys.next() );
+                times.add( dataTimeToString( dT ) );
+            }
+            return times;
+        }
+
+        return null;
+    }
+
+    // Private method for converting a string time (from journeyTimes) to an integer key
+    private int strJourneyTimeToInt( String serviceName, boolean serviceDirection, String timeStr ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null ) {
+            Iterator journeys = service.journeys.journeys.keySet().iterator();
+            while( journeys.hasNext() ) {
+                int timeInt = (int) journeys.next();
+                dataTime dT = new dataTime( timeInt );
+                if( dataTimeToString( dT ).equals( timeStr ) )
+                  return timeInt;
+            }
+        }
+
+        return 0;
+    }
+
+    // Returns the total number of timetable entries (stops) for a given service and time
+    public int timetableEntries( String serviceName, boolean serviceDirection, String timeStr ) {
+        return timetableEntriesInt( serviceName, serviceDirection, strJourneyTimeToInt( serviceName, serviceDirection, timeStr ) );
+    }
+
+    // Private method for getting the total number of timetable entries (stops) for a given service and integer journey time
+    public int timetableEntriesInt( String serviceName, boolean serviceDirection, int journey ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null && journey != 0 ) {
+            return service.numberOfStops( journey );
+        }
+        
+        return 0;
+    }
+
+
+
+    // Returns timetable entry <entryNo> for a given service and time
+    // First stop is entryNo = 0
+    public TimetableEntry getTimetableEntry( String serviceName, boolean serviceDirection, String timeStr, int entryNo ) {
+        return getTimetableEntryInt( serviceName, serviceDirection, strJourneyTimeToInt( serviceName, serviceDirection, timeStr ), entryNo );
+    }
+
+    // Private method for getting a timetable entry using next journey integer time
+    private TimetableEntry getTimetableEntryInt( String serviceName, boolean serviceDirection, int time, int entryNo ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null ) {
+            if( entryNo >= 0 && entryNo < service.numberOfStops( time ) ) {
+                String stopRef  = service.stopRef( time, entryNo + 1 );
+                String stopName = tnds.stops.name( stopRef );
+                dataTime sT     = new dataTime( service.timeToStopRef( tD, time, stopRef, false ) );
+                return new TimetableEntry( stopName, dataTimeToString( sT ) );
+            }
+        }
+
+        return null;
+    }
+
+    // Returns all timetable entries for a given service and time
+    public ArrayList <TimetableEntry> getTimetable( String serviceName, boolean serviceDirection, String timeStr ) {
+        return getTimetableInt( serviceName, serviceDirection, strJourneyTimeToInt( serviceName, serviceDirection, timeStr ) );
+    }
+
+    // Private method for getting a timetable using next journey integer time
+    private ArrayList <TimetableEntry> getTimetableInt( String serviceName, boolean serviceDirection, int time ) {
+        int entries = timetableEntriesInt( serviceName, serviceDirection, time );
+        ArrayList <TimetableEntry> timetable = new ArrayList <TimetableEntry> ();
+        for( int i = 0; i < entries; i++ )
+          timetable.add( getTimetableEntryInt( serviceName, serviceDirection, time, i ) );
+
+        return timetable;
+    }
+
+    // Returns the timetable entries for the next instance of a given service
+    public ArrayList <TimetableEntry> getNextTimetable( String serviceName, boolean serviceDirection ) {
+        // Get the current time
+        tD.setCurrent();
+        // Get the service instance
+        dataService service = tnds.services.get( serviceName, serviceDirection );
+        // Does the service exist?
+        if( service != null )
+            return getTimetableInt( serviceName, serviceDirection, service.nextJourney( tD, tD, false ) );
 
         return null;
     }
