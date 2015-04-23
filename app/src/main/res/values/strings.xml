@@ -74,5 +74,9 @@
     <string name="delay">minutes late</string>
     <string name="press_message">Press for more details</string>
     <string name="to">to</string>
+    <string name="BusLock">Lock Map to Bus</string>
+    <string name="ToggleHeader">Lock Map to Bus</string>
+    <string name="LiveData">Live Data</string>
+    <string name="search_title">search title</string>
 
 </resources>

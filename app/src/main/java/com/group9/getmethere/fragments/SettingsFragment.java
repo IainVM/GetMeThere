@@ -6,15 +6,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ToggleButton;
 
+import com.group9.getmethere.MainActivity;
 import com.group9.getmethere.R;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link getmethere.group9.com.getmethere.fragment.SettingsFragment.OnFragmentInteractionListener} interface
+ * {@link com.group9.getmethere.fragments.SettingsFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link getmethere.group9.com.getmethere.fragment.SettingsFragment#newInstance} factory method to
+ * Use the {@link com.group9.getmethere.fragments.SettingsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class SettingsFragment extends Fragment {
@@ -97,5 +99,22 @@ public class SettingsFragment extends Fragment {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
+
+
+    public void eventHandle(View rootView){
+
+        ToggleButton b = (ToggleButton) rootView.findViewById(R.id.toggleButton);
+
+        // attach an OnClickListener
+        b.setOnClickListener(new ToggleButton.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                //
+            }
+        });
+    }
+
 
 }

@@ -1,6 +1,5 @@
 package com.group9.getmethere.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.group9.getmethere.MainActivity;
@@ -50,6 +49,8 @@ import android.graphics.Color;
 import android.content.res.AssetManager;
 //
 import android.graphics.Paint;
+import android.widget.ToggleButton;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -91,7 +92,8 @@ public class BusFragment extends Fragment {
     // Enable update system?
     private static boolean UPDATES_ENABLED  = true;
     //
-    
+
+    private ToggleButton NewsListView;
     private View rootView;
 
     // Backend-related members
@@ -171,6 +173,7 @@ public class BusFragment extends Fragment {
         this.serviceDirection = bus.direction;
 
         populateInfo(rootView);
+        eventHandle(rootView);
 
         return rootView;
     }
@@ -754,4 +757,20 @@ public class BusFragment extends Fragment {
             return true;
       return false;
     }
+
+    public void eventHandle(View rootView){
+
+        ToggleButton b = (ToggleButton) rootView.findViewById(R.id.toggleButton);
+
+        // attach an OnClickListener
+        b.setOnClickListener(new ToggleButton.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                trackBus = !trackBus;
+            }
+        });
+    }
+
 }

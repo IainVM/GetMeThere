@@ -33,9 +33,10 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
+
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_margin="20sp"
                 android:orientation="vertical">
@@ -55,6 +56,23 @@
                     android:textColor="#33B5E5"
                     android:textSize="30sp"
                     android:id="@+id/busName"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5sp"
+                    android:textColor="#33B5E5"
+                    android:textSize="10sp"
+                    android:text="@string/ToggleHeader"/>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BusLock"
+                    android:id="@+id/toggleButton"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true" />
 
             </LinearLayout>
 

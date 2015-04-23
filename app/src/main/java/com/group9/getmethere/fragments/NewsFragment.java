@@ -163,8 +163,6 @@ public class NewsFragment extends Fragment {
     }
 
 
-
-
     // Listview updating code - run as thread from within populateBuses()
     public class updateLoop implements Runnable {
 
