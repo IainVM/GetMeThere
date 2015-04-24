@@ -158,22 +158,29 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.global, menu);
-
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_search:
+                Fragment newFragment = SearchFragment.newInstance(6);
 
-        //noinspection SimplifiableIfStatement
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.container, newFragment);
+                transaction.addToBackStack(null);
 
-        return super.onOptionsItemSelected(item);
+                transaction.commit();
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     /* Backend-related methods */

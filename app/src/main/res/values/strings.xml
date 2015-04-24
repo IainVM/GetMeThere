@@ -78,5 +78,7 @@
     <string name="ToggleHeader">Lock Map to Bus</string>
     <string name="LiveData">Live Data</string>
     <string name="search_title">search title</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Search</string>
 
 </resources>
