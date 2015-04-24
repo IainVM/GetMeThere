@@ -1,5 +1,7 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import android.util.Log;
 
 import java.util.Set;
@@ -8,7 +10,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class dataService {
+public class dataService implements Serializable {
 
     // Debug
     private static boolean DEBUG = false;

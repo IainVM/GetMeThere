@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 
-public class dataStop {
+public class dataStop implements Serializable {
 
     public String stopName;
     public ArrayList < String > associatedServices;

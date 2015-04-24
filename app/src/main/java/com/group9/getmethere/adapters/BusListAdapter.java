@@ -43,7 +43,7 @@ public class BusListAdapter extends ArrayAdapter<backendAPI.Bus> {
 
 
         //TODO:Remove comments when Live stuff is sorted
-        //if(api.isActive(service, dir)) {
+        if(api.isActive(service, dir)) {
 
             rowView = inflater.inflate(R.layout.bus_list_item, parent, false);
 
@@ -58,7 +58,13 @@ public class BusListAdapter extends ArrayAdapter<backendAPI.Bus> {
             textView = (TextView) rowView.findViewById(R.id.busTime);
             textView.setText(time);
 
-        //}
+            textView = (TextView) rowView.findViewById(R.id.busDirection);
+            if(dir){
+                textView.setText("Inbound");
+            }else {
+                textView.setText("Outbound");
+            }
+        }
         return rowView;
     }
 }

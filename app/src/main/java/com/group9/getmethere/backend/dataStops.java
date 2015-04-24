@@ -1,9 +1,11 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.HashMap;
 import java.util.Set;
 
-public class dataStops {
+public class dataStops implements Serializable {
 
 	private HashMap < String, dataStop > stops;
 	

@@ -1,12 +1,14 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.HashMap;
 
-public class dataStandard {
+public class dataStandard implements Serializable {
 	
 	public String origin, destination;
 
-	HashMap < String, dataPattern > journeyPatterns;
+	public HashMap < String, dataPattern > journeyPatterns;
 
 	public dataStandard() {
 	    journeyPatterns = new HashMap < String, dataPattern >();

@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import java.util.TreeMap;
 
-public class dataJourneys {
+public class dataJourneys implements Serializable {
 
 	public TreeMap < Integer, dataJourney > journeys;
 

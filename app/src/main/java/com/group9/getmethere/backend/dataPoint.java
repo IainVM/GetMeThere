@@ -1,6 +1,8 @@
 package com.group9.getmethere.backend;
 
-public class dataPoint {
+import java.io.Serializable;
+
+public class dataPoint implements Serializable {
 
     public static final double  TOLERANCE   =   0.002000;   // Allowed lat/lon variation in matching points
     public final static double  NONE 	    =   Double.MAX_VALUE;

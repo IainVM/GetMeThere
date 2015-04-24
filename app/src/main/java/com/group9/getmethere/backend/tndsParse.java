@@ -1,8 +1,10 @@
 package com.group9.getmethere.backend;
 
+import java.io.Serializable;
+
 import android.content.res.AssetManager;
 
-public class tndsParse {
+public class tndsParse implements Serializable {
 
   public static final String  SUFFIX = ".xml";
 

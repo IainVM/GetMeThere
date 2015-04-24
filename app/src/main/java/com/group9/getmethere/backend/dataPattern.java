@@ -1,6 +1,8 @@
 package com.group9.getmethere.backend;
 
-public class dataPattern {
+import java.io.Serializable;
+
+public class dataPattern implements Serializable {
 
         public static final String  INBOUND   = "inbound";
         public static final String  OUTBOUND  = "outbound";

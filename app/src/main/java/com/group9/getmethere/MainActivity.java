@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 import android.content.res.AssetManager;
@@ -19,15 +20,20 @@ import android.widget.ProgressBar;
 // Backend imports
 import com.group9.getmethere.backend.*;
 
+// NASTY NETWORK-ACCESS TESTING BODGE IMPORT
+import android.os.StrictMode;
+
 import com.group9.getmethere.fragments.*;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks,
-        NewsFragment.OnBusSelectedListener
+        NewsFragment.OnBusSelectedListener,
+        SearchFragment.OnBusSelectedListener
 {
 
     // Log
     private static final String TAG = "GetMeThere [MainActivity] ";
+    public static boolean UPDATES_ENABLED  = true;
     //
 
     /**
@@ -44,12 +50,21 @@ public class MainActivity extends ActionBarActivity
 
     // Backend-related members
     public backendAPI bAPI;
+    private AssetManager assets;
     //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // NASTY TEST BODGE (to allow net access from main activity - pathRequest() causes crash without this!!)
+        //  Testing only - this should be resolved using proper Android protocol (TODO)
+        StrictMode.ThreadPolicy policy = new StrictMode.
+        ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy( policy );
+
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -61,12 +76,8 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         // DJH: Set up the backend API
-        // Iain: Note that the backend is NOT ready for use until bAPI.isReady() returns
-        //  true! All data must be loaded first, this takes a while.
-        //  How about adding a busy indicator of some kind? Might make the rest of the
-        //  implementation a LOT simpler! :)
-
-        bAPI = new backendAPI( getAssets() );
+        assets = getAssets();
+        bAPI = new backendAPI( this, getAssets() );
 
         // DJH: Start the update threads for all known services
         startUpdateThreads sUT = new startUpdateThreads();
@@ -149,30 +160,29 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (!mNavigationDrawerFragment.isDrawerOpen()) {
-            // Only show items in the action bar relevant to this screen
-            // if the drawer is not showing. Otherwise, let the drawer
-            // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.main, menu);
-            restoreActionBar();
-            return true;
-        }
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.global, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_search:
+                Fragment newFragment = SearchFragment.newInstance(6);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.container, newFragment);
+                transaction.addToBackStack(null);
+
+                transaction.commit();
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
     /* Backend-related methods */
@@ -180,6 +190,12 @@ public class MainActivity extends ActionBarActivity
     public backendAPI backEnd() {
     	return bAPI;
     }
+
+    // Return a handle to the assets
+    public AssetManager assetsHandle() {
+        return assets;
+    }
+
 
     @Override
     public void onBusSelected(backendAPI.Bus bus) {
