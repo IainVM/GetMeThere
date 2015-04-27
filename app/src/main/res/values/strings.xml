@@ -1,84 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Get Me There!</string>
-    <string name="example_email">example@domain.co.uk</string>
-
-    <!--Login Screen-->
-    <string name="login_email">Email Address:</string>
-    <string name="login_pass">Password:</string>
-    <string name="login_btn">Log In!</string>
-    <string name="login_register_btn">Register!</string>
-
-    <!--Registering-->
-    <string name="registering_1">Email Address</string>
-    <string name="registering_2">Username:</string>
-    <string name="registering_box_2">Example123</string>
-    <string name="registering_3">Password:</string>
-    <string name="registering_4">Confirm Password:</string>
-    <string name="registering_btn">Continue to News Feed!</string>
-
-    <!--Registered-->
-    <string name="registered_1">You are officially registered!</string>
-    <string name="registered_btn">Continue to News Feed!</string>
-
-    <!--News Feed-->
-    <!--No static information on this layout-->
-
-    <!--Tickets-->
-    <string name="ticket_from">From:</string>
-    <string name="ticket_to">To:</string>
-    <string name="ticket_type">Journey Type:</string>
-    <string name="ticket_time">Time:</string>
-    <string name="ticket_price_text">Price</string>
-    <string name="ticket_price">£00.00</string>
-    <string name="ticket_btn">Continue To Payment</string>
-
-    <!--Tickets2-->
-    <string name="ticket_card_name">Card Name: </string>
-    <string name="ticket_card_num">Card Number: </string>
-    <string name="ticket_card_sdate">Start Date: </string>
-    <string name="ticket_card_edate">Expiry Date: </string>
-    <string name="ticket_card_snum">Security Number: </string>
-    <string name="ticket_pay_btn">Confirm Payment!</string>
-
-    <!--Ticket Temp Data-->
-    <string-array name="ticket_data">
-        <item>Choose...</item>
-        <item>test1</item>
-        <item>test2</item>
-        <item>test3</item>
-        <item>test4</item>
-        <item>test5</item>
-        <item>test6</item>
-        <item>test7</item>
-    </string-array>
-
-    <!--Settings-->
-    <string name="settings_location">Location Service</string>
-    <string name="settings_notifications">Location Service</string>
-    <string name="settings_btn">Rate GetMeThere!</string>
-
-
-    <string name="title_section1">News Feed</string>
-    <string name="title_section2">Buy Ticket</string>
-    <string name="title_section3">My Tickets</string>
-    <string name="title_section4">View Favourites</string>
-    <string name="title_section5">Settings</string>
-    <string name="title_section6">Login/Logout</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
+    <string name="app_name">GetMeThere</string>
+    <string name="liveInd"></string>
     <string name="action_settings">Settings</string>
-    <string name="busNameHeader">Bus</string>
-    <string name="delay">minutes late</string>
-    <string name="press_message">Press for more details</string>
-    <string name="to">to</string>
-    <string name="BusLock">Lock Map to Bus</string>
-    <string name="ToggleHeader">Lock Map to Bus</string>
-    <string name="LiveData">Live Data</string>
-    <string name="search_title">search title</string>
-    <string name="app_label">Search</string>
-    <string name="search_hint">Search</string>
 
 </resources>
